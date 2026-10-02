@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToolNova AI — Discover the Right AI Tool for Every Task</title>
+<meta name="description" content="ToolNova AI helps creators, students, freelancers and businesses discover the right AI tool. Browse 120+ curated AI tools, compare features & pricing, and get creator services.">
+<meta name="keywords" content="AI tools, AI directory, creator tools, productivity, AI writing, AI video, AI image, compare AI tools">
+<meta property="og:title" content="ToolNova AI — Discover the right AI tool. Create more. Work smarter.">
+<meta property="og:description" content="Explore powerful AI tools for content creation, business, productivity, design, coding and more.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%236366f1'/><stop offset='1' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='68' font-size='55' font-family='Arial' font-weight='900' text-anchor='middle' fill='white'>N</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter','sans-serif'], display: ['Space Grotesk','sans-serif'] },
+      colors: {
+        nova: { 950:'#050816', 900:'#080C1E', 800:'#0D1430', 700:'#131C44', 600:'#1B2560' },
+        accent: { violet:'#7C3AED', indigo:'#6366F1', cyan:'#06B6D4', teal:'#14B8A6' }
+      },
+      boxShadow: { glow:'0 0 40px -8px rgba(99,102,241,.55)', card:'0 12px 40px -12px rgba(0,0,0,.6)', pop:'0 8px 30px -6px rgba(6,182,212,.35)' }
+    }
+  }
+}
+</script>
+<style>
+  *{ -webkit-tap-highlight-color: transparent; }
+  html{ scroll-behavior:smooth; }
+  body{ background:#050816; color:#E6EAF6; font-family:Inter,sans-serif; overflow-x:hidden; }
+  ::selection{ background:rgba(99,102,241,.4); }
+  ::-webkit-scrollbar{ width:10px; height:10px; }
+  ::-webkit-scrollbar-track{ background:#080C1E; }
+  ::-webkit-scrollbar-thumb{ background:linear-gradient(180deg,#6366F1,#06B6D4); border-radius:99px; border:2px solid #080C1E; }
+  :focus-visible{ outline:2px solid #22D3EE; outline-offset:3px; border-radius:8px; }
+  .skip-link{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+  .skip-link:focus{ left:12px; top:12px; width:auto; height:auto; background:#fff; color:#000; padding:10px 16px; border-radius:10px; z-index:9999; font-weight:700; }
+  .font-display{ font-family:'Space Grotesk',sans-serif; }
+  .grad-text{ background:linear-gradient(92deg,#A5B4FC 0%,#22D3EE 45%,#C4B5FD 100%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .grad-bg{ background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 45%,#06B6D4 100%); }
+  .glass{ background:rgba(13,20,48,.72); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(255,255,255,.08); }
+  .card{ background:linear-gradient(180deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 100%), #0C1330; border:1px solid rgba(255,255,255,.09); border-radius:20px; transition:.32s cubic-bezier(.2,.7,.3,1); }
+  .card:hover{ transform:translateY(-5px); border-color:rgba(99,102,241,.5); box-shadow:0 18px 50px -12px rgba(99,102,241,.35), 0 8px 24px rgba(0,0,0,.5); }
+  .btn-primary{ background:linear-gradient(135deg,#6366F1,#8B5CF6 55%,#06B6D4 130%); box-shadow:0 8px 28px -6px rgba(99,102,241,.6), inset 0 1px 0 rgba(255,255,255,.25); transition:.25s; }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 14px 36px -6px rgba(99,102,241,.7); filter:brightness(1.08); }
+  .btn-ghost{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); transition:.25s; }
+  .btn-ghost:hover{ background:rgba(255,255,255,.11); border-color:rgba(255,255,255,.28); transform:translateY(-2px); }
+  .orb{ position:absolute; border-radius:9999px; filter:blur(90px); opacity:.5; pointer-events:none; }
+  .grid-bg{ background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:44px 44px; mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,black 40%,transparent 75%); -webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,black 40%,transparent 75%); }
+  .badge-dot{ width:7px; height:7px; border-radius:99px; background:#22D3EE; box-shadow:0 0 12px #22D3EE; animation:pulseDot 2s infinite; }
+  @keyframes pulseDot{ 0%,100%{ opacity:1; transform:scale(1);} 50%{ opacity:.5; transform:scale(.8);} }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+  @keyframes floaty2{ 0%,100%{ transform:translateY(0) rotate(-2deg);} 50%{ transform:translateY(-8px) rotate(2deg);} }
+  .float-a{ animation:floaty 5s ease-in-out infinite; } .float-b{ animation:floaty2 6s ease-in-out infinite; }
+  @keyframes shimmer{ 0%{ background-position:-400px 0;} 100%{ background-position:400px 0;} }
+  .reveal{ opacity:0; transform:translateY(26px); transition:.7s cubic-bezier(.2,.7,.3,1); }
+  .reveal.visible{ opacity:1; transform:none; }
+  .nav-link{ position:relative; padding:8px 12px; border-radius:10px; color:#C2C9E2; font-weight:500; font-size:14.5px; transition:.2s; }
+  .nav-link:hover{ color:#fff; background:rgba(255,255,255,.07); }
+  .nav-link.active{ color:#fff; background:rgba(99,102,241,.18); box-shadow:inset 0 0 0 1px rgba(99,102,241,.35); }
+  .page{ display:none; } .page.active{ display:block; animation:pageIn .45s ease; }
+  @keyframes pageIn{ from{ opacity:0; transform:translateY(12px);} to{ opacity:1; transform:none;} }
+  .chip{ font-size:12px; font-weight:600; letter-spacing:.02em; padding:5px 11px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06); }
+  .input{ width:100%; background:#0A1030; border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:13px 16px; color:#fff; font-size:15px; transition:.2s; }
+  .input::placeholder{ color:#7A84A8; } .input:focus{ border-color:#6366F1; box-shadow:0 0 0 3px rgba(99,102,241,.25); outline:none; background:#0C1440; }
+  select.input{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2394A3B8' stroke-width='2'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:38px; }
+  label.lbl{ font-size:13px; font-weight:600; color:#B9C1DD; margin-bottom:6px; display:block; letter-spacing:.02em; }
+  .tool-avatar{ width:52px; height:52px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk'; font-weight:700; font-size:22px; color:#fff; flex-shrink:0; box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 8px 20px -6px rgba(0,0,0,.6); }
+  .stars{ color:#FBBF24; letter-spacing:1px; font-size:13px; }
+  table.compare-table{ border-collapse:separate; border-spacing:0; width:100%; min-width:640px; }
+  table.compare-table th, table.compare-table td{ padding:14px 16px; text-align:left; font-size:14px; border-bottom:1px solid rgba(255,255,255,.08); vertical-align:top; }
+  table.compare-table thead th{ background:rgba(99,102,241,.12); font-weight:700; }
+  table.compare-table tbody tr:hover td{ background:rgba(255,255,255,.02); }
+  .faq-btn{ width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 18px; font-weight:600; font-size:15px; }
+  .faq-body{ max-height:0; overflow:hidden; transition:max-height .35s ease; } .faq-item.open .faq-body{ max-height:300px; }
+  .faq-item.open .faq-arrow{ transform:rotate(180deg); } .faq-arrow{ transition:.3s; }
+  .toast{ background:#101845; border:1px solid rgba(99,102,241,.4); box-shadow:0 12px 40px rgba(0,0,0,.5); }
+  .marquee{ display:flex; gap:12px; overflow:hidden; mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent); -webkit-mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent); }
+  .marquee-track{ display:flex; gap:12px; animation:scrollX 26s linear infinite; flex-shrink:0; }
+  @keyframes scrollX{ to{ transform:translateX(-100%);} }
+  .chat-msg-bot{ background:rgba(99,102,241,.14); border:1px solid rgba(99,102,241,.25); }
+  .chat-msg-user{ background:linear-gradient(135deg,#6366F1,#06B6D4); }
+  .prose-dark p{ color:#B9C1DD; line-height:1.75; font-size:15px; margin-bottom:14px; }
+  .prose-dark h3{ font-family:'Space Grotesk'; font-weight:700; color:#fff; margin:22px 0 10px; font-size:18px; }
+  .prose-dark ul{ list-style:disc; padding-left:22px; color:#B9C1DD; margin-bottom:14px; } .prose-dark li{ margin-bottom:6px; line-height:1.6; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none!important; transition:none!important; } html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body class="antialiased">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 glass" style="background:rgba(5,8,22,.82);" role="banner">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[68px] flex items-center justify-between gap-3" aria-label="Main navigation">
+    <a href="#/home" class="flex items-center gap-2.5 shrink-0" aria-label="ToolNova AI home">
+      <span class="w-10 h-10 rounded-2xl grad-bg flex items-center justify-center font-display font-bold text-white text-xl shadow-glow">N</span>
+      <span class="leading-tight">
+        <span class="font-display font-700 font-bold text-white text-[18px] block tracking-tight">ToolNova <span class="grad-text">AI</span></span>
+        <span class="hidden sm:block text-[10px] tracking-[.18em] text-slate-400 font-semibold">DISCOVER • CREATE • SCALE</span>
+      </span>
+    </a>
+    <div class="hidden lg:flex items-center gap-1" role="menubar">
+      <a href="#/home" data-nav="home" class="nav-link">Home</a>
+      <a href="#/tools" data-nav="tools" class="nav-link">AI Tools</a>
+      <a href="#/categories" data-nav="categories" class="nav-link">Categories</a>
+      <a href="#/compare" data-nav="compare" class="nav-link">Compare</a>
+      <a href="#/services" data-nav="services" class="nav-link">Services</a>
+      <a href="#/blog" data-nav="blog" class="nav-link">Blog</a>
+      <a href="#/about" data-nav="about" class="nav-link">About</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="searchOpenBtn" aria-label="Open search" class="w-10 h-10 rounded-xl btn-ghost flex items-center justify-center">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a href="#/submit" class="hidden md:inline-flex btn-ghost text-sm font-semibold px-4 py-2.5 rounded-xl text-white">Submit Tool</a>
+      <button onclick="openGetStarted()" class="btn-primary text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-xl text-white whitespace-nowrap">Get Started</button>
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="lg:hidden w-10 h-10 rounded-xl btn-ghost flex items-center justify-center">
+        <svg id="menuIconOpen" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="menuIconClose" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile drawer -->
+  <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10" style="background:rgba(5,8,22,.97);">
+    <div class="px-5 py-5 grid gap-1.5 max-h-[75vh] overflow-y-auto">
+      <a href="#/home" data-nav="home" class="nav-link text-[15px] py-3">Home</a>
+      <a href="#/tools" data-nav="tools" class="nav-link text-[15px] py-3">AI Tools</a>
+      <a href="#/categories" data-nav="categories" class="nav-link text-[15px] py-3">Categories</a>
+      <a href="#/compare" data-nav="compare" class="nav-link text-[15px] py-3">Compare</a>
+      <a href="#/services" data-nav="services" class="nav-link text-[15px] py-3">Services</a>
+      <a href="#/blog" data-nav="blog" class="nav-link text-[15px] py-3">Blog</a>
+      <a href="#/about" data-nav="about" class="nav-link text-[15px] py-3">About</a>
+      <a href="#/contact" data-nav="contact" class="nav-link text-[15px] py-3">Contact</a>
+      <div class="flex gap-2 mt-3">
+        <a href="#/submit" class="flex-1 text-center btn-ghost font-semibold py-3 rounded-xl text-sm">Submit Tool</a>
+        <button onclick="openGetStarted()" class="flex-1 btn-primary font-semibold py-3 rounded-xl text-sm">Get Started</button>
+      </div>
+      <p class="text-center text-xs text-slate-500 mt-3">Discover the right AI tool. Create more. Work smarter.</p>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="fixed inset-0 z-[70] hidden" role="dialog" aria-modal="true" aria-label="Site search">
+  <div class="absolute inset-0 bg-black/75 backdrop-blur-sm" onclick="closeSearch()"></div>
+  <div class="relative max-w-2xl mx-auto mt-24 px-4">
+    <div class="glass rounded-3xl p-5 sm:p-7 shadow-card">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-display font-bold text-lg">Search ToolNova AI</h2>
+        <button onclick="closeSearch()" aria-label="Close search" class="w-9 h-9 rounded-lg btn-ghost flex items-center justify-center">✕</button>
+      </div>
+      <div class="relative">
+        <input id="globalSearchInput" class="input pl-11" placeholder="Search AI tools, categories or tasks…" aria-label="Search tools">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-4">
+        <span class="text-xs text-slate-400 font-semibold py-1.5">Trending:</span>
+        <button onclick="quickSearch('video')" class="chip hover:border-cyan-400/60">AI video</button>
+        <button onclick="quickSearch('thumbnail')" class="chip hover:border-cyan-400/60">thumbnails</button>
+        <button onclick="quickSearch('voice')" class="chip hover:border-cyan-400/60">voiceover</button>
+        <button onclick="quickSearch('coding')" class="chip hover:border-cyan-400/60">coding</button>
+        <button onclick="quickSearch('writing')" class="chip hover:border-cyan-400/60">writing</button>
+      </div>
+      <div id="globalSearchResults" class="mt-4 grid gap-2 max-h-[38vh] overflow-y-auto"></div>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="pt-[68px]">
+<!-- ================= HOME ================= -->
+<section id="page-home" class="page" aria-label="Home">
+  <!-- HERO -->
+  <div class="relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="orb w-[520px] h-[520px] -top-40 -left-40" style="background:radial-gradient(circle,#6366F1,transparent 65%);"></div>
+    <div class="orb w-[460px] h-[460px] top-10 -right-32" style="background:radial-gradient(circle,#06B6D4,transparent 65%); opacity:.35;"></div>
+    <div class="orb w-[300px] h-[300px] bottom-0 left-1/3" style="background:radial-gradient(circle,#A855F7,transparent 65%); opacity:.28;"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-12 lg:pt-20 lg:pb-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-[11px] sm:text-xs font-bold tracking-[.14em] text-cyan-200">
+          <span class="badge-dot"></span> AI TOOLS • CREATOR TOOLS • PRODUCTIVITY
+        </div>
+        <h1 class="font-display font-bold text-[34px] leading-[1.08] sm:text-5xl lg:text-[58px] mt-5 tracking-tight">Discover the Right <span class="grad-text">AI Tool</span> for <span id="rotator" class="grad-text">Every Task</span></h1>
+        <p class="text-slate-300/90 text-[15px] sm:text-lg mt-4 leading-relaxed max-w-xl">Explore powerful AI tools for content creation, business, productivity, design, coding and more.</p>
+        <form id="heroSearchForm" class="mt-6 glass rounded-2xl p-2 flex flex-col sm:flex-row gap-2 shadow-card" role="search">
+          <div class="relative flex-1">
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+            <input id="heroSearchInput" class="w-full bg-transparent pl-11 pr-4 py-3.5 text-[15px] placeholder:text-slate-500 focus:outline-none" placeholder="Search AI tools, categories or tasks…" aria-label="Search AI tools">
+          </div>
+          <button type="submit" class="btn-primary rounded-xl px-7 py-3.5 font-semibold text-[15px]">Search</button>
+        </form>
+        <div class="flex flex-wrap gap-2 mt-3 text-xs">
+          <span class="text-slate-500 font-medium py-1.5">Popular:</span>
+          <button onclick="heroQuick('ChatGPT')" class="chip hover:border-indigo-400">ChatGPT</button>
+          <button onclick="heroQuick('video')" class="chip hover:border-indigo-400">Video editing</button>
+          <button onclick="heroQuick('voice')" class="chip hover:border-indigo-400">Voice AI</button>
+          <button onclick="heroQuick('design')" class="chip hover:border-indigo-400">Design</button>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 mt-6">
+          <a href="#/tools" class="btn-primary text-center rounded-2xl px-7 py-4 font-semibold">Explore AI Tools →</a>
+          <a href="#/categories" class="btn-ghost text-center rounded-2xl px-7 py-4 font-semibold">Browse Categories</a>
+        </div>
+        <div class="flex items-center gap-3 mt-6">
+          <div class="flex -space-x-2.5" aria-hidden="true">
+            <span class="w-9 h-9 rounded-full border-2 border-[#050816] bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold">AK</span>
+            <span class="w-9 h-9 rounded-full border-2 border-[#050816] bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-xs font-bold">JM</span>
+            <span class="w-9 h-9 rounded-full border-2 border-[#050816] bg-gradient-to-br from-fuchsia-500 to-pink-600 flex items-center justify-center text-xs font-bold">RS</span>
+            <span class="w-9 h-9 rounded-full border-2 border-[#050816] bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-xs font-bold">+</span>
+          </div>
+          <p class="text-[13px] text-slate-400 leading-snug">Discover useful tools for <span class="text-slate-200 font-semibold">creators, students, freelancers</span> and businesses.</p>
+        </div>
+      </div>
+      <!-- Hero visual -->
+      <div class="relative hidden md:block" aria-hidden="true">
+        <div class="glass rounded-[26px] p-6 shadow-card relative z-10">
+          <div class="flex items-center justify-between mb-5">
+            <div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-rose-400"></span><span class="w-3 h-3 rounded-full bg-amber-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span></div>
+            <span class="chip !text-cyan-200 !border-cyan-400/30">● Live directory</span>
+          </div>
+          <div id="heroMiniTools" class="grid gap-3"></div>
+          <div class="mt-5 rounded-2xl p-4 flex items-center justify-between" style="background:linear-gradient(135deg,rgba(99,102,241,.22),rgba(6,182,212,.14)); border:1px solid rgba(99,102,241,.3);">
+            <div><p class="text-xs text-slate-400 font-semibold">MATCH ACCURACY</p><p class="font-display font-bold text-2xl">98.2% <span class="text-sm text-emerald-300 font-sans">▲ 12%</span></p></div>
+            <div class="flex gap-1 items-end h-12"><span class="w-2.5 rounded bg-indigo-400/70" style="height:40%"></span><span class="w-2.5 rounded bg-indigo-400/80" style="height:60%"></span><span class="w-2.5 rounded bg-violet-400" style="height:75%"></span><span class="w-2.5 rounded bg-cyan-400" style="height:100%"></span></div>
+          </div>
+        </div>
+        <div class="absolute -top-5 -right-3 z-20 float-a glass rounded-2xl px-4 py-3 flex items-center gap-2.5 shadow-glow">
+          <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center font-bold">✓</span>
+          <div><p class="text-xs font-bold">Compared 3 tools</p><p class="text-[11px] text-slate-400">Saved 6 hrs research</p></div>
+        </div>
+        <div class="absolute -bottom-5 -left-4 z-20 float-b glass rounded-2xl px-4 py-3 flex items-center gap-2.5">
+          <span class="text-amber-300 text-lg">★</span>
+          <div><p class="text-xs font-bold">4.8 average rating</p><p class="text-[11px] text-slate-400">26 curated tools</p></div>
+        </div>
+      </div>
+    </div>
+    <!-- stats -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="card p-5 text-center"><p class="font-display font-bold text-2xl sm:text-3xl grad-text"><span class="counter" data-target="120">0</span>+</p><p class="text-xs text-slate-400 font-semibold mt-1 tracking-wide">CURATED AI TOOLS</p></div>
+        <div class="card p-5 text-center"><p class="font-display font-bold text-2xl sm:text-3xl grad-text"><span class="counter" data-target="12">0</span></p><p class="text-xs text-slate-400 font-semibold mt-1 tracking-wide">CATEGORIES</p></div>
+        <div class="card p-5 text-center"><p class="font-display font-bold text-2xl sm:text-3xl grad-text"><span class="counter" data-target="35">0</span>k+</p><p class="text-xs text-slate-400 font-semibold mt-1 tracking-wide">MONTHLY CREATORS</p></div>
+        <div class="card p-5 text-center"><p class="font-display font-bold text-2xl sm:text-3xl grad-text">4.8<span class="text-lg">★</span></p><p class="text-xs text-slate-400 font-semibold mt-1 tracking-wide">AVG. TOOL RATING</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-7 reveal">
+      <div><p class="text-xs font-bold tracking-[.2em] text-cyan-300 mb-2">● HAND-PICKED FOR YOU</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl">Popular AI Tools</h2>
+        <p class="text-slate-400 mt-2">Explore some of the most useful AI tools available today.</p></div>
+      <a href="#/tools" class="btn-ghost rounded-xl px-5 py-3 text-sm font-semibold whitespace-nowrap">View all tools →</a>
+    </div>
+    <div id="featuredGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="text-center mb-8 reveal"><p class="text-xs font-bold tracking-[.2em] text-indigo-300 mb-2">● BROWSE BY NEED</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl">Explore AI by Category</h2>
+      <p class="text-slate-400 mt-2">Tap a category to instantly filter the directory.</p></div>
+    <div id="homeCategories" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4"></div>
+  </div>
+
+  <!-- WHY -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-8 reveal"><h2 class="font-display font-bold text-3xl sm:text-4xl">Find the Right Tool <span class="grad-text">Faster</span></h2>
+      <p class="text-slate-400 mt-2">Why thousands of creators start their research on ToolNova AI.</p></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="card p-6 reveal"><div class="w-12 h-12 rounded-2xl grad-bg flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.8z"/></svg></div><h3 class="font-display font-bold text-lg mb-1.5">Curated Tools</h3><p class="text-sm text-slate-400 leading-relaxed">Discover useful AI tools organized by category.</p></div>
+      <div class="card p-6 reveal"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h3 class="font-display font-bold text-lg mb-1.5">Easy Search</h3><p class="text-sm text-slate-400 leading-relaxed">Find tools based on what you want to accomplish.</p></div>
+      <div class="card p-6 reveal"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-purple-600 flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 3H4v5M20 9V4h-5M15 21h5v-5M4 15v5h5"/></svg></div><h3 class="font-display font-bold text-lg mb-1.5">Compare Tools</h3><p class="text-sm text-slate-400 leading-relaxed">Compare important features, pricing and use cases.</p></div>
+      <div class="card p-6 reveal"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-rose-500 flex items-center justify-center mb-4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div><h3 class="font-display font-bold text-lg mb-1.5">Creator Services</h3><p class="text-sm text-slate-400 leading-relaxed">Get help with thumbnails, scripts, logos and other creator needs.</p></div>
+    </div>
+    <!-- compare teaser -->
+    <div class="card mt-6 p-6 sm:p-10 grid lg:grid-cols-2 gap-8 items-center overflow-hidden relative reveal">
+      <div class="orb w-[300px] h-[300px] -top-20 -right-20" style="background:radial-gradient(circle,#6366F1,transparent 65%); opacity:.35;"></div>
+      <div class="relative"><span class="chip !text-violet-200 !border-violet-400/30">COMPARE MODE</span>
+        <h3 class="font-display font-bold text-2xl sm:text-3xl mt-3">Stop guessing. Compare side-by-side.</h3>
+        <p class="text-slate-400 mt-3 text-[15px]">Select up to 3 tools and see pricing, features and best-for in one clean table. Built mobile-first.</p>
+        <div class="flex flex-wrap gap-3 mt-6"><a href="#/compare" class="btn-primary rounded-xl px-6 py-3.5 font-semibold text-sm">Compare Now</a><a href="#/tools" class="btn-ghost rounded-xl px-6 py-3.5 font-semibold text-sm">Browse tools</a></div>
+      </div>
+      <div class="relative grid gap-3" id="compareTeaser"></div>
+    </div>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-7 reveal">
+      <div><h2 class="font-display font-bold text-3xl">Creator Services</h2><p class="text-slate-400 mt-2">Need help creating content? Choose a service.</p></div>
+      <a href="#/services" class="btn-ghost rounded-xl px-5 py-3 text-sm font-semibold">All services →</a>
+    </div>
+    <div id="homeServices" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+
+  <!-- BLOG PREVIEW -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-7 reveal">
+      <div><h2 class="font-display font-bold text-3xl">AI & Creator Resources</h2><p class="text-slate-400 mt-2">Tutorials, comparisons and creator workflows.</p></div>
+      <a href="#/blog" class="btn-ghost rounded-xl px-5 py-3 text-sm font-semibold">Visit blog →</a>
+    </div>
+    <div id="homeBlog" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="font-display font-bold text-3xl text-center mb-8 reveal">Loved by Creators</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <figure class="card p-6 reveal"><div class="stars mb-3">★★★★★</div><blockquote class="text-sm text-slate-300 leading-relaxed">“I found my entire video stack in 20 minutes — script, voice and editing tools compared in one place.”</blockquote><figcaption class="flex items-center gap-3 mt-5"><span class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-sm">AR</span><span><span class="block text-sm font-bold">Amara R.</span><span class="block text-xs text-slate-500">YouTuber • 180k subs</span></span></figcaption></figure>
+      <figure class="card p-6 reveal"><div class="stars mb-3">★★★★★</div><blockquote class="text-sm text-slate-300 leading-relaxed">“The compare table saved me from paying for three overlapping tools. Cleanest AI directory I’ve used.”</blockquote><figcaption class="flex items-center gap-3 mt-5"><span class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-sm">DK</span><span><span class="block text-sm font-bold">Daniel K.</span><span class="block text-xs text-slate-500">Freelance Designer</span></span></figcaption></figure>
+      <figure class="card p-6 reveal"><div class="stars mb-3">★★★★★</div><blockquote class="text-sm text-slate-300 leading-relaxed">“Ordered a thumbnail + script bundle. Delivered in 48 hours. My CTR jumped 2.1% the next week.”</blockquote><figcaption class="flex items-center gap-3 mt-5"><span class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-pink-600 flex items-center justify-center font-bold text-sm">SP</span><span><span class="block text-sm font-bold">Sofia P.</span><span class="block text-xs text-slate-500">Course Creator</span></span></figcaption></figure>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="rounded-[28px] p-8 sm:p-12 text-center relative overflow-hidden reveal" style="background:linear-gradient(135deg,#1E1B6B,#4C1D95 55%,#0E7490); border:1px solid rgba(255,255,255,.15);">
+      <div class="absolute inset-0 grid-bg opacity-60"></div>
+      <div class="relative"><h2 class="font-display font-bold text-3xl sm:text-4xl">Ready to work smarter?</h2><p class="text-indigo-100/90 mt-3 max-w-xl mx-auto">Join 35,000+ creators getting weekly tool drops, tutorials and exclusive service discounts.</p>
+        <form onsubmit="return newsletterSubmit(event,this)" class="mt-6 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+          <input required type="email" placeholder="Enter your email" aria-label="Email address" class="flex-1 rounded-xl px-5 py-3.5 text-[15px] text-white placeholder:text-indigo-200/70 focus:outline-none" style="background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.25);">
+          <button class="bg-white text-indigo-900 font-bold rounded-xl px-6 py-3.5 hover:bg-indigo-50 transition">Get Started Free</button>
+        </form>
+        <p class="text-xs text-indigo-200/70 mt-3">Free forever • No spam • Unsubscribe anytime</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section id="page-tools" class="page" aria-label="AI Tools Directory">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-cyan-300 mb-2">● DIRECTORY</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">AI Tools Directory</h1>
+    <p class="text-slate-400 mt-3 max-w-2xl">Search, filter and compare curated AI tools. All listings show demo data for illustration — verify pricing on official sites.</p>
+    <div class="card p-4 sm:p-5 mt-7 grid gap-3">
+      <div class="relative">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+        <input id="toolsSearch" class="input pl-11" placeholder="Search tools…" aria-label="Search tools">
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+        <div><label class="lbl" for="fCat">Category</label><select id="fCat" class="input text-sm"></select></div>
+        <div><label class="lbl" for="fPrice">Pricing</label><select id="fPrice" class="input text-sm"><option value="All">All pricing</option><option>Free</option><option>Freemium</option><option>Paid</option></select></div>
+        <div><label class="lbl" for="fRate">Rating</label><select id="fRate" class="input text-sm"><option value="All">Any rating</option><option value="4.7">4.7+ Excellent</option><option value="4.5">4.5+ Great</option><option value="4.3">4.3+ Good</option></select></div>
+        <div><label class="lbl" for="fUse">Use Case</label><select id="fUse" class="input text-sm"><option value="All">All uses</option><option>Content Creation</option><option>Business & Work</option><option>Coding & Dev</option><option>Education & Learning</option><option>Design & Creativity</option><option>Marketing & SEO</option></select></div>
+        <div><label class="lbl" for="fSort">Sort by</label><select id="fSort" class="input text-sm"><option value="popular">Top rated</option><option value="az">Name A–Z</option><option value="free">Free first</option></select></div>
+      </div>
+      <div class="flex items-center justify-between flex-wrap gap-2 pt-1">
+        <p id="toolsCount" class="text-sm text-slate-400" role="status"></p>
+        <button onclick="clearFilters()" class="text-sm font-semibold text-cyan-300 hover:text-cyan-200">Clear all filters ✕</button>
+      </div>
+      <div id="activeChips" class="flex flex-wrap gap-2"></div>
+    </div>
+    <div id="toolsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"></div>
+    <div id="toolsEmpty" class="hidden card p-10 text-center mt-6">
+      <p class="font-display font-bold text-xl">No tools found</p><p class="text-slate-400 mt-2 text-sm">Try a different keyword or clear your filters.</p>
+      <button onclick="clearFilters()" class="btn-primary rounded-xl px-6 py-3 mt-5 text-sm font-semibold">Reset filters</button>
+    </div>
+    <div class="text-center mt-8">
+      <button id="loadMoreBtn" onclick="loadMore()" class="btn-ghost rounded-2xl px-8 py-3.5 font-semibold text-sm">Load More Tools ↓</button>
+      <p id="pageInfo" class="text-xs text-slate-500 mt-3"></p>
+    </div>
+    <div class="card mt-8 p-5 flex flex-col sm:flex-row items-center gap-4 justify-between" style="border-style:dashed;">
+      <p class="text-sm text-slate-400"><span class="text-amber-300 font-bold">Monetization ready:</span> Featured slots & sponsored listings available. <span class="underline decoration-dotted">Advertise with ToolNova AI →</span></p>
+      <a href="#/submit" class="btn-primary rounded-xl px-5 py-2.5 text-sm font-semibold whitespace-nowrap">List your tool</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES PAGE ================= -->
+<section id="page-categories" class="page" aria-label="Categories">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-indigo-300 mb-2">● 12 CURATED COLLECTIONS</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">Browse Categories</h1>
+    <p class="text-slate-400 mt-3 max-w-2xl">Every category is clickable — select one to see matching tools instantly filtered in the directory.</p>
+    <div id="allCategories" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"></div>
+  </div>
+</section>
+
+<!-- ================= TOOL DETAIL ================= -->
+<section id="page-detail" class="page" aria-label="Tool details">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="detailWrap"></div>
+</section>
+
+<!-- ================= COMPARE ================= -->
+<section id="page-compare" class="page" aria-label="Compare AI Tools">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-fuchsia-300 mb-2">● SIDE-BY-SIDE</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">Compare AI Tools</h1>
+    <p class="text-slate-400 mt-3">Select two or three tools, then hit <strong class="text-white">Compare Now</strong>.</p>
+    <div class="card p-5 sm:p-6 mt-7">
+      <div class="grid sm:grid-cols-3 gap-3" id="compareSelectors"></div>
+      <div class="flex flex-col sm:flex-row gap-3 mt-4">
+        <button onclick="runCompare()" class="btn-primary rounded-xl px-8 py-3.5 font-semibold flex-1">Compare Now ⚡</button>
+        <button onclick="clearCompare()" class="btn-ghost rounded-xl px-6 py-3.5 font-semibold">Clear</button>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-4 items-center"><span class="text-xs text-slate-500 font-semibold">Try:</span>
+        <button onclick="presetCompare(['chatgpt','claude','perplexity'])" class="chip">ChatGPT vs Claude vs Perplexity</button>
+        <button onclick="presetCompare(['runway','capcut','descript'])" class="chip">Runway vs CapCut vs Descript</button>
+        <button onclick="presetCompare(['midjourney','leonardo','canva'])" class="chip">Midjourney vs Leonardo vs Canva</button>
+      </div>
+    </div>
+    <div id="compareResult" class="mt-6"></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="page-services" class="page" aria-label="Creator Services">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-amber-300 mb-2">● DONE-FOR-YOU</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">Creator Services</h1>
+    <p class="text-slate-400 mt-3">Need help creating content? Choose a service.</p>
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"></div>
+    <div class="grid lg:grid-cols-5 gap-6 mt-10">
+      <div class="lg:col-span-3 card p-6 sm:p-8">
+        <h2 class="font-display font-bold text-2xl">Request a Service</h2>
+        <p class="text-sm text-slate-400 mt-1 mb-6">Fill the form — we reply within 24 hours (demo inbox).</p>
+        <form id="serviceForm" onsubmit="return serviceSubmit(event)" class="grid sm:grid-cols-2 gap-4">
+          <div><label class="lbl" for="svName">Your name *</label><input id="svName" required class="input" placeholder="Alex Carter"></div>
+          <div><label class="lbl" for="svEmail">Email *</label><input id="svEmail" required type="email" class="input" placeholder="you@email.com"></div>
+          <div><label class="lbl" for="svService">Service *</label><select id="svService" required class="input"></select></div>
+          <div><label class="lbl" for="svBudget">Budget</label><select id="svBudget" class="input"><option>Under $30</option><option>$30 – $75</option><option>$75 – $150</option><option>$150+</option></select></div>
+          <div><label class="lbl" for="svDate">Deadline</label><input id="svDate" type="date" class="input"></div>
+          <div><label class="lbl" for="svLink">Channel / link</label><input id="svLink" class="input" placeholder="https://youtube.com/@you"></div>
+          <div class="sm:col-span-2"><label class="lbl" for="svDetails">Project details *</label><textarea id="svDetails" required rows="4" class="input" placeholder="Tell us about your video, style, references…"></textarea></div>
+          <button class="sm:col-span-2 btn-primary rounded-xl py-4 font-semibold">Request Service →</button>
+        </form>
+        <div id="serviceSuccess" class="hidden text-center py-8">
+          <div class="w-16 h-16 mx-auto rounded-full bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center text-3xl text-emerald-300">✓</div>
+          <h3 class="font-display font-bold text-2xl mt-4">Request received!</h3>
+          <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto">Thanks — our creator team will email you within 24 hours with timeline & payment link. <span class="text-slate-500">(Demo confirmation — no real order placed.)</span></p>
+          <button onclick="resetServiceForm()" class="btn-ghost rounded-xl px-6 py-3 mt-5 text-sm font-semibold">Make another request</button>
+        </div>
+      </div>
+      <aside class="lg:col-span-2 grid gap-4 content-start">
+        <div class="card p-6"><h3 class="font-display font-bold">How it works</h3><ol class="mt-4 grid gap-3 text-sm text-slate-300"><li class="flex gap-3"><span class="w-7 h-7 rounded-lg grad-bg flex items-center justify-center font-bold text-xs shrink-0">1</span> Pick a service & describe your project.</li><li class="flex gap-3"><span class="w-7 h-7 rounded-lg grad-bg flex items-center justify-center font-bold text-xs shrink-0">2</span> Get quote + delivery date within 24h.</li><li class="flex gap-3"><span class="w-7 h-7 rounded-lg grad-bg flex items-center justify-center font-bold text-xs shrink-0">3</span> Approve the draft, request revisions.</li><li class="flex gap-3"><span class="w-7 h-7 rounded-lg grad-bg flex items-center justify-center font-bold text-xs shrink-0">4</span> Receive final files + source assets.</li></ol></div>
+        <div class="card p-6"><h3 class="font-display font-bold">Why creators choose us</h3><ul class="mt-3 text-sm text-slate-400 grid gap-2"><li>✓ Revisions included on every order</li><li>✓ 48-hour express options</li><li>✓ Thumbnails tested for CTR</li><li>✓ Full commercial rights</li></ul></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUBMIT ================= -->
+<section id="page-submit" class="page" aria-label="Submit a tool">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-cyan-300 mb-2">● GET LISTED</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">Submit Your AI Tool</h1>
+    <p class="text-slate-400 mt-3">Free basic listing. Featured placements available after review.</p>
+    <div class="card p-6 sm:p-8 mt-7">
+      <form id="submitForm" onsubmit="return submitTool(event)" class="grid sm:grid-cols-2 gap-4">
+        <div><label class="lbl" for="stName">Tool Name *</label><input id="stName" required class="input" placeholder="e.g. NovaWriter AI"></div>
+        <div><label class="lbl" for="stWeb">Official Website *</label><input id="stWeb" required type="url" class="input" placeholder="https://…"></div>
+        <div><label class="lbl" for="stCat">Category *</label><select id="stCat" required class="input"></select></div>
+        <div><label class="lbl" for="stPrice">Pricing *</label><select id="stPrice" required class="input"><option>Free</option><option>Freemium</option><option>Paid</option></select></div>
+        <div class="sm:col-span-2"><label class="lbl" for="stDesc">Description *</label><textarea id="stDesc" required rows="3" class="input" placeholder="What does your tool do? Who is it for?"></textarea></div>
+        <div class="sm:col-span-2"><label class="lbl" for="stFeat">Key features (comma separated)</label><input id="stFeat" class="input" placeholder="AI chat, templates, API, …"></div>
+        <div class="sm:col-span-2"><label class="lbl" for="stEmail">Contact Email *</label><input id="stEmail" required type="email" class="input" placeholder="founder@tool.com"></div>
+        <button class="sm:col-span-2 btn-primary rounded-xl py-4 font-semibold">Submit Tool →</button>
+        <p class="sm:col-span-2 text-xs text-slate-500 text-center">By submitting you agree to our review guidelines. Demo form — data is not stored on a server.</p>
+      </form>
+      <div id="submitSuccess" class="hidden text-center py-8">
+        <div class="w-16 h-16 mx-auto rounded-full bg-cyan-500/15 border border-cyan-400/40 flex items-center justify-center text-3xl text-cyan-300">✓</div>
+        <h3 class="font-display font-bold text-2xl mt-4">Tool submitted!</h3>
+        <p class="text-slate-400 text-sm mt-2">We’ll review your listing within 2–3 business days. <span class="text-slate-500">(Demo confirmation.)</span></p>
+        <div class="flex gap-2 justify-center mt-5"><button onclick="resetSubmit()" class="btn-ghost rounded-xl px-6 py-3 text-sm font-semibold">Submit another</button><a href="#/tools" class="btn-primary rounded-xl px-6 py-3 text-sm font-semibold">Browse directory</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="page-blog" class="page" aria-label="Blog">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-emerald-300 mb-2">● LEARN & GROW</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">AI & Creator Resources</h1>
+    <p class="text-slate-400 mt-3">News, tutorials and honest comparisons — written for creators.</p>
+    <div id="blogChips" class="flex flex-wrap gap-2 mt-6"></div>
+    <div id="blogFeatured" class="mt-6"></div>
+    <div id="blogGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"></div>
+  </div>
+</section>
+<section id="page-article" class="page" aria-label="Article"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="articleWrap"></div></section>
+
+<!-- ================= ABOUT ================= -->
+<section id="page-about" class="page" aria-label="About">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-indigo-300 mb-2">● OUR STORY</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">About ToolNova AI</h1>
+    <p class="text-slate-300 mt-4 text-[16px] leading-relaxed max-w-3xl">ToolNova AI is an AI tools discovery and creator-services platform. We cut through the hype of 10,000+ AI launches to surface tools that are actually useful — then help you use them with affordable creative services.</p>
+    <div class="grid sm:grid-cols-2 gap-4 mt-8">
+      <div class="card p-7"><div class="text-3xl mb-3">◉</div><h2 class="font-display font-bold text-xl">Our Mission</h2><p class="text-sm text-slate-400 mt-2 leading-relaxed">Help every creator, student, freelancer and business find the right AI tool in minutes — not weeks. Discover the right AI tool. Create more. Work smarter.</p></div>
+      <div class="card p-7"><div class="text-3xl mb-3">⬣</div><h2 class="font-display font-bold text-xl">What We Offer</h2><ul class="text-sm text-slate-400 mt-2 grid gap-1.5"><li>• Curated directory across 12 categories</li><li>• Honest side-by-side comparisons</li><li>• Tutorials & creator workflows</li><li>• Done-for-you thumbnails, scripts & branding</li></ul></div>
+      <div class="card p-7"><div class="text-3xl mb-3">✦</div><h2 class="font-display font-bold text-xl">For Creators</h2><p class="text-sm text-slate-400 mt-2 leading-relaxed">YouTubers, TikTokers, designers and writers get tool stacks for scripting, editing, voiceovers and growth — plus services when you’d rather outsource.</p><a href="#/services" class="inline-block mt-4 text-sm font-bold text-cyan-300">Explore services →</a></div>
+      <div class="card p-7"><div class="text-3xl mb-3">▣</div><h2 class="font-display font-bold text-xl">For Businesses</h2><p class="text-sm text-slate-400 mt-2 leading-relaxed">Teams find vetted tools for support, marketing, research and automation — with featured-listing and advertising options as we scale.</p><a href="#/contact" class="inline-block mt-4 text-sm font-bold text-cyan-300">Partner with us →</a></div>
+    </div>
+    <div class="card mt-6 p-7 sm:p-9 grid sm:grid-cols-3 gap-6 text-center">
+      <div><p class="font-display font-bold text-3xl grad-text">2024</p><p class="text-sm text-slate-400 mt-1">Founded by creators, for creators</p></div>
+      <div><p class="font-display font-bold text-3xl grad-text">Editorial-first</p><p class="text-sm text-slate-400 mt-1">Hands-on testing before listing</p></div>
+      <div><p class="font-display font-bold text-3xl grad-text">Creator-funded</p><p class="text-sm text-slate-400 mt-1">Affiliates & services, never pay-to-rank</p></div>
+    </div>
+    <div class="text-center mt-8"><a href="#/tools" class="btn-primary rounded-2xl px-8 py-4 font-semibold inline-block">Start discovering →</a></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="page-contact" class="page" aria-label="Contact">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <p class="text-xs font-bold tracking-[.2em] text-cyan-300 mb-2">● SAY HELLO</p>
+    <h1 class="font-display font-bold text-3xl sm:text-5xl">Contact Us</h1>
+    <p class="text-slate-400 mt-3">Questions, partnerships or feedback — we reply within 1–2 business days.</p>
+    <div class="grid lg:grid-cols-5 gap-6 mt-8">
+      <div class="lg:col-span-2 grid gap-4 content-start">
+        <div class="card p-6"><p class="text-xs font-bold tracking-widest text-slate-500">GENERAL</p><p class="font-bold mt-1">hello@toolnova.ai</p><p class="text-sm text-slate-500">(placeholder demo email)</p></div>
+        <div class="card p-6"><p class="text-xs font-bold tracking-widest text-slate-500">SUPPORT</p><p class="font-bold mt-1">support@toolnova.ai</p><p class="text-sm text-slate-500">Tool help & service orders</p></div>
+        <div class="card p-6"><p class="text-xs font-bold tracking-widest text-slate-500">PARTNERSHIPS</p><p class="font-bold mt-1">partners@toolnova.ai</p><p class="text-sm text-slate-500">Listings, affiliates & ads</p></div>
+        <div class="card p-6 text-sm text-slate-400"><p class="font-display font-bold text-white mb-2">Office (demo)</p>548 Market Street, Suite 42<br>San Francisco, CA 94104<br><span class="text-slate-500">Mon–Fri • 9am–6pm PT</span></div>
+      </div>
+      <div class="lg:col-span-3 card p-6 sm:p-8">
+        <form onsubmit="return contactSubmit(event)" class="grid sm:grid-cols-2 gap-4" aria-label="Contact form">
+          <div><label class="lbl" for="cName">Name *</label><input id="cName" required class="input" placeholder="Your name"></div>
+          <div><label class="lbl" for="cEmail">Email *</label><input id="cEmail" required type="email" class="input" placeholder="you@email.com"></div>
+          <div class="sm:col-span-2"><label class="lbl" for="cSub">Subject *</label><input id="cSub" required class="input" placeholder="How can we help?"></div>
+          <div class="sm:col-span-2"><label class="lbl" for="cMsg">Message *</label><textarea id="cMsg" required rows="5" class="input" placeholder="Write your message…"></textarea></div>
+          <button class="sm:col-span-2 btn-primary rounded-xl py-4 font-semibold">Send Message →</button>
+        </form>
+        <div id="contactSuccess" class="hidden text-center py-8">
+          <div class="w-16 h-16 mx-auto rounded-full bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center text-3xl text-emerald-300">✓</div>
+          <h3 class="font-display font-bold text-2xl mt-4">Message sent!</h3><p class="text-slate-400 text-sm mt-2">Thanks for reaching out — we’ll get back soon. (Demo confirmation.)</p>
+          <button onclick="document.getElementById('contactSuccess').classList.add('hidden');event.target.closest('section').querySelector('form').classList.remove('hidden')" class="btn-ghost rounded-xl px-6 py-3 mt-5 text-sm font-semibold">Send another</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 mt-6" style="background:#040613;" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid gap-10 md:grid-cols-4">
+    <div>
+      <div class="flex items-center gap-2.5"><span class="w-10 h-10 rounded-2xl grad-bg flex items-center justify-center font-display font-bold text-xl">N</span><span class="font-display font-bold text-lg">ToolNova <span class="grad-text">AI</span></span></div>
+      <p class="text-sm text-slate-400 mt-4 leading-relaxed">Discover the right AI tool. Create more. Work smarter.</p>
+      <div class="flex gap-2 mt-5">
+        <a href="#" aria-label="X (Twitter)" class="w-10 h-10 rounded-xl btn-ghost flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.8L17.8 20z"/></svg></a>
+        <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-xl btn-ghost flex items-center justify-center"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.4-1C16.4 3.6 12 3.6 12 3.6s-4.4 0-7.7.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.3 7.6.3s4.4 0 7.7-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 15V8.4l6.2 3.3L9.7 15z"/></svg></a>
+        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl btn-ghost flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-xl btn-ghost flex items-center justify-center"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.1h4.56V23H.22V8.1zM8.34 8.1h4.37v2h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 7v8.27h-4.56v-7.3c0-1.74-.03-4-2.44-4-2.44 0-2.82 1.9-2.82 3.87V23H8.34V8.1z"/></svg></a>
+      </div>
+    </div>
+    <nav aria-label="Explore"><p class="font-display font-bold text-sm tracking-widest text-slate-300 mb-4">EXPLORE</p><ul class="grid gap-2.5 text-sm text-slate-400"><li><a class="hover:text-white" href="#/tools">AI Tools Directory</a></li><li><a class="hover:text-white" href="#/categories">Categories</a></li><li><a class="hover:text-white" href="#/compare">Compare Tools</a></li><li><a class="hover:text-white" href="#/blog">Blog & Guides</a></li><li><a class="hover:text-white" href="#/submit">Submit a Tool</a></li></ul></nav>
+    <nav aria-label="Services"><p class="font-display font-bold text-sm tracking-widest text-slate-300 mb-4">SERVICES</p><ul class="grid gap-2.5 text-sm text-slate-400"><li><a class="hover:text-white" href="#/services">Creator Services</a></li><li><a class="hover:text-white" href="#/services">Thumbnails & Branding</a></li><li><a class="hover:text-white" href="#/services">Scripts & Editing</a></li><li><a class="hover:text-white" href="#/about">About ToolNova AI</a></li><li><a class="hover:text-white" href="#/contact">Contact</a></li></ul></nav>
+    <div><p class="font-display font-bold text-sm tracking-widest text-slate-300 mb-4">STAY UPDATED</p><p class="text-sm text-slate-400">Weekly AI tool drops. No spam.</p>
+      <form onsubmit="return newsletterSubmit(event,this)" class="mt-3 flex gap-2"><input required type="email" placeholder="Email" aria-label="Email for newsletter" class="input !py-2.5 text-sm"><button class="btn-primary rounded-xl px-4 text-sm font-bold shrink-0">Join</button></form>
+      <p class="text-[11px] text-slate-600 mt-4 leading-relaxed">Affiliate Disclosure: some listings may contain affiliate links that support ToolNova AI at no extra cost to you. All demo content is placeholder until verified.</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500"><p>© 2026 ToolNova AI • Demo site — all tool data is illustrative placeholder content.</p><div class="flex gap-5"><a href="#" class="hover:text-slate-300">Privacy</a><a href="#" class="hover:text-slate-300">Terms</a><a href="#/contact" class="hover:text-slate-300">Advertise</a></div></div></div>
+</footer>
+
+<!-- GET STARTED MODAL -->
+<div id="getStartedModal" class="fixed inset-0 z-[80] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Get started">
+  <div class="absolute inset-0 bg-black/75 backdrop-blur-sm" onclick="closeGetStarted()"></div>
+  <div class="relative glass rounded-3xl p-7 sm:p-9 max-w-md w-full shadow-card">
+    <button onclick="closeGetStarted()" aria-label="Close" class="absolute top-4 right-4 w-9 h-9 rounded-lg btn-ghost">✕</button>
+    <div id="gsForm">
+      <span class="w-12 h-12 rounded-2xl grad-bg flex items-center justify-center font-display font-bold text-xl">N</span>
+      <h2 class="font-display font-bold text-2xl mt-4">Get Started with ToolNova AI</h2>
+      <p class="text-sm text-slate-400 mt-1">Create your free starter profile (demo).</p>
+      <form onsubmit="return getStartedSubmit(event)" class="grid gap-3 mt-5">
+        <div><label class="lbl" for="gsName">Name</label><input id="gsName" required class="input" placeholder="Your name"></div>
+        <div><label class="lbl" for="gsEmail">Email</label><input id="gsEmail" required type="email" class="input" placeholder="you@email.com"></div>
+        <div><label class="lbl" for="gsRole">I am a…</label><select id="gsRole" class="input"><option>Creator / YouTuber</option><option>Student</option><option>Freelancer</option><option>Business owner</option><option>Developer</option></select></div>
+        <button class="btn-primary rounded-xl py-3.5 font-semibold mt-1">Create Free Account →</button>
+      </form>
+      <p class="text-[11px] text-slate-500 text-center mt-3">Demo only — no real account is created.</p>
+    </div>
+    <div id="gsSuccess" class="hidden text-center py-6">
+      <div class="w-16 h-16 mx-auto rounded-full bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center text-3xl text-emerald-300">✓</div>
+      <h3 class="font-display font-bold text-2xl mt-4">Welcome aboard!</h3>
+      <p class="text-slate-400 text-sm mt-2">Check your inbox for curated starter picks. <span class="text-slate-500">(Demo confirmation.)</span></p>
+      <a href="#/tools" onclick="closeGetStarted()" class="btn-primary rounded-xl px-6 py-3 mt-5 inline-block text-sm font-semibold">Explore AI Tools</a>
+    </div>
+  </div>
+</div>
+
+<!-- AI CONCIERGE -->
+<button id="conciergeBtn" onclick="toggleConcierge()" aria-label="Open AI assistant" class="fixed bottom-5 right-5 z-[60] w-14 h-14 rounded-2xl grad-bg shadow-glow flex items-center justify-center text-2xl hover:scale-105 transition">✦</button>
+<div id="conciergePanel" class="fixed bottom-[84px] right-4 sm:right-5 z-[60] w-[calc(100vw-32px)] max-w-[380px] hidden glass rounded-3xl overflow-hidden shadow-card" role="dialog" aria-label="ToolNova assistant">
+  <div class="grad-bg p-4 flex items-center gap-3">
+    <span class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center font-display font-bold">N</span>
+    <div class="flex-1"><p class="font-display font-bold text-[15px]">Nova Assistant</p><p class="text-[11px] text-white/80">● Online • recommends tools instantly</p></div>
+    <button onclick="toggleConcierge()" aria-label="Close assistant" class="w-8 h-8 rounded-lg bg-white/15">✕</button>
+  </div>
+  <div id="chatLog" class="p-4 h-[320px] overflow-y-auto grid gap-2.5 content-start text-sm"></div>
+  <div class="p-3 border-t border-white/10 flex gap-2">
+    <input id="chatInput" class="input !py-2.5 text-sm" placeholder="e.g. best AI for video scripts…" aria-label="Ask assistant">
+    <button onclick="sendChat()" class="btn-primary rounded-xl px-4 font-bold">➤</button>
+  </div>
+</div>
+
+<div id="toastWrap" class="fixed bottom-5 left-4 sm:left-5 z-[90] grid gap-2 max-w-[calc(100vw-100px)]" aria-live="polite"></div>
+
+<script>
+/* ============ DATA ============ */
+const CATS = [
+  {n:'AI Writing', d:'Blogs, scripts, emails & copy', g:'from-violet-500 to-purple-700', icon:'M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z'},
+  {n:'AI Image', d:'Art, photos & thumbnails', g:'from-fuchsia-500 to-pink-600', icon:'M4 5h16v14H4zM8 10a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM4 17l5-5 4 4 3-3 4 4'},
+  {n:'AI Video', d:'Editing, avatars & clips', g:'from-rose-500 to-orange-500', icon:'M4 5h16v14H4zM10 9l5 3-5 3z'},
+  {n:'AI Voice', d:'Voiceovers, cloning & music', g:'from-cyan-500 to-blue-600', icon:'M12 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3zM5 10a7 7 0 0014 0M12 17v5'},
+  {n:'AI Coding', d:'Autocomplete & app builders', g:'from-emerald-500 to-teal-600', icon:'M8 6l-6 6 6 6M16 6l6 6-6 6'},
+  {n:'Productivity', d:'Notes, docs & automation', g:'from-indigo-500 to-blue-600', icon:'M13 2L4 14h6l-1 8 9-12h-6z'},
+  {n:'Marketing', d:'SEO, ads & social growth', g:'from-amber-500 to-orange-600', icon:'M3 11l18-8-8 18-2.5-7.5z'},
+  {n:'Business', d:'Meetings, sites & support', g:'from-slate-500 to-slate-700', icon:'M4 7h16v13H4zM9 7V4h6v3M9 12h6M9 16h6'},
+  {n:'Education', d:'Study, tutoring & research', g:'from-sky-500 to-indigo-600', icon:'M12 3L2 8l10 5 10-5zM6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5M22 8v6'},
+  {n:'Design', d:'UI, branding & creatives', g:'from-purple-500 to-indigo-600', icon:'M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2-.5-1.2.3-2.5 1.7-2.5H17a4 4 0 004-4c0-5-4-9.5-9-9.5zM7.5 12a1.5 1.5 0 100-3M12 7.5a1.5 1.5 0 100-3'},
+  {n:'Social Media', d:'Shorts, captions & clips', g:'from-pink-500 to-rose-600', icon:'M8 12h8M12 8v8M21 12a9 9 0 11-18 0 9 9 0 0118 0z'},
+  {n:'Research', d:'Answers with citations', g:'from-teal-500 to-emerald-600', icon:'M11 4a7 7 0 105.2 11.6L21 21l-4.3-4.3M8 11h6M8 14h4'}
+];
+const TOOLS = [
+  {id:'chatgpt', name:'ChatGPT', short:'Chat, write, code & brainstorm with the most popular AI assistant.', category:'AI Writing', pricing:'Freemium', rating:4.9, reviews:'2.1M', tags:['Chatbot','Writing','Coding'], uses:['Content Creation','Business & Work','Education & Learning'], web:'https://chatgpt.com', grad:'from-emerald-400 to-teal-600', price:'Free • Plus $20/mo', feat:true, sponsored:true},
+  {id:'claude', name:'Claude', short:'Thoughtful AI for long-form writing, analysis and coding.', category:'AI Writing', pricing:'Freemium', rating:4.8, reviews:'890K', tags:['Writing','Analysis','Coding'], uses:['Content Creation','Business & Work','Education & Learning'], web:'https://claude.ai', grad:'from-orange-400 to-rose-500', price:'Free • Pro $20/mo', feat:true},
+  {id:'canva', name:'Canva Magic Studio', short:'Design thumbnails, posts & decks with one-click AI magic.', category:'Design', pricing:'Freemium', rating:4.7, reviews:'1.4M', tags:['Design','Thumbnails','Templates'], uses:['Design & Creativity','Content Creation','Marketing & SEO'], web:'https://canva.com', grad:'from-cyan-400 to-blue-600', price:'Free • Pro $15/mo', feat:true},
+  {id:'midjourney', name:'Midjourney', short:'Stunning AI art & photoreal images from text prompts.', category:'AI Image', pricing:'Paid', rating:4.8, reviews:'640K', tags:['Image','Art','Thumbnails'], uses:['Design & Creativity','Content Creation'], web:'https://midjourney.com', grad:'from-indigo-400 to-purple-700', price:'From $10/mo', feat:true},
+  {id:'perplexity', name:'Perplexity AI', short:'Answer engine with real citations — research in seconds.', category:'Research', pricing:'Freemium', rating:4.7, reviews:'520K', tags:['Search','Research','Citations'], uses:['Education & Learning','Business & Work'], web:'https://perplexity.ai', grad:'from-teal-400 to-cyan-600', price:'Free • Pro $20/mo', feat:true},
+  {id:'elevenlabs', name:'ElevenLabs', short:'Ultra-realistic voiceovers, cloning & dubbing in 29 languages.', category:'AI Voice', pricing:'Freemium', rating:4.8, reviews:'410K', tags:['Voiceover','Cloning','Dubbing'], uses:['Content Creation','Business & Work'], web:'https://elevenlabs.io', grad:'from-slate-600 to-slate-900', price:'Free • Starter $5/mo', feat:true},
+  {id:'capcut', name:'CapCut AI', short:'Auto-captions, background removal & viral templates for video.', category:'AI Video', pricing:'Free', rating:4.6, reviews:'1.8M', tags:['Editing','Captions','Shorts'], uses:['Content Creation','Design & Creativity'], web:'https://capcut.com', grad:'from-slate-700 to-black', price:'Free • Pro $8/mo', feat:true},
+  {id:'notion-ai', name:'Notion AI', short:'Summaries, drafts & wikis inside your favourite workspace.', category:'Productivity', pricing:'Freemium', rating:4.5, reviews:'380K', tags:['Notes','Docs','Automation'], uses:['Business & Work','Education & Learning'], web:'https://notion.so', grad:'from-stone-500 to-stone-700', price:'Add-on $10/mo', feat:true},
+  {id:'jasper', name:'Jasper AI', short:'On-brand marketing copy for teams & agencies.', category:'Marketing', pricing:'Paid', rating:4.4, reviews:'120K', tags:['Copywriting','Brand voice','Teams'], uses:['Marketing & SEO','Business & Work'], web:'https://jasper.ai', grad:'from-purple-500 to-indigo-700', price:'From $39/mo'},
+  {id:'runway', name:'Runway Gen-3', short:'Text-to-video, green screen & cinematic AI effects.', category:'AI Video', pricing:'Freemium', rating:4.6, reviews:'210K', tags:['Text-to-video','Effects','Film'], uses:['Content Creation','Design & Creativity'], web:'https://runway.ml', grad:'from-emerald-400 to-green-700', price:'Free • $12/mo'},
+  {id:'descript', name:'Descript', short:'Edit video by editing text — filler removal & overdub.', category:'AI Video', pricing:'Freemium', rating:4.5, reviews:'150K', tags:['Podcast','Editing','Overdub'], uses:['Content Creation','Business & Work'], web:'https://descript.com', grad:'from-blue-500 to-indigo-700', price:'Free • $15/mo'},
+  {id:'murf', name:'Murf AI', short:'Studio-quality voiceovers with 120+ natural voices.', category:'AI Voice', pricing:'Freemium', rating:4.4, reviews:'95K', tags:['Voiceover','E-learning','Ads'], uses:['Content Creation','Education & Learning'], web:'https://murf.ai', grad:'from-violet-500 to-purple-800', price:'Free • $19/mo'},
+  {id:'copilot', name:'GitHub Copilot', short:'AI pair programmer that writes code with you.', category:'AI Coding', pricing:'Paid', rating:4.7, reviews:'480K', tags:['Code','Autocomplete','IDE'], uses:['Coding & Dev','Business & Work'], web:'https://github.com/features/copilot', grad:'from-slate-600 to-indigo-900', price:'$10/mo'},
+  {id:'cursor', name:'Cursor', short:'AI-first code editor for shipping software faster.', category:'AI Coding', pricing:'Freemium', rating:4.8, reviews:'190K', tags:['Editor','Agents','Refactor'], uses:['Coding & Dev'], web:'https://cursor.sh', grad:'from-cyan-500 to-slate-800', price:'Free • Pro $20/mo', sponsored:true},
+  {id:'copyai', name:'Copy.ai', short:'Go-to-market AI for sales & marketing workflows.', category:'Marketing', pricing:'Freemium', rating:4.3, reviews:'80K', tags:['Sales','Workflows','SEO'], uses:['Marketing & SEO','Business & Work'], web:'https://copy.ai', grad:'from-blue-400 to-cyan-600', price:'Free • $49/mo'},
+  {id:'surfer', name:'Surfer SEO', short:'Optimize articles to rank with content intelligence.', category:'Marketing', pricing:'Paid', rating:4.5, reviews:'60K', tags:['SEO','Content','Ranking'], uses:['Marketing & SEO','Content Creation'], web:'https://surferseo.com', grad:'from-green-500 to-emerald-700', price:'From $69/mo'},
+  {id:'synthesia', name:'Synthesia', short:'AI avatars turn scripts into studio videos — no camera.', category:'Business', pricing:'Paid', rating:4.6, reviews:'110K', tags:['Avatars','Training','Explainer'], uses:['Business & Work','Education & Learning'], web:'https://synthesia.io', grad:'from-indigo-500 to-blue-700', price:'From $22/mo'},
+  {id:'leonardo', name:'Leonardo AI', short:'Game assets, thumbnails & product shots with fine control.', category:'AI Image', pricing:'Free', rating:4.6, reviews:'230K', tags:['Art','Thumbnails','Assets'], uses:['Design & Creativity','Content Creation'], web:'https://leonardo.ai', grad:'from-fuchsia-500 to-indigo-700', price:'Free • $12/mo'},
+  {id:'gamma', name:'Gamma', short:'Beautiful decks, docs & sites from a single prompt.', category:'Productivity', pricing:'Freemium', rating:4.5, reviews:'140K', tags:['Slides','Docs','Pitch'], uses:['Business & Work','Education & Learning'], web:'https://gamma.app', grad:'from-violet-400 to-fuchsia-600', price:'Free • $10/mo'},
+  {id:'grammarly', name:'GrammarlyGO', short:'Rewrite, ideate & polish writing anywhere you type.', category:'Education', pricing:'Freemium', rating:4.6, reviews:'980K', tags:['Grammar','Rewrite','Study'], uses:['Education & Learning','Content Creation'], web:'https://grammarly.com', grad:'from-green-500 to-teal-600', price:'Free • $12/mo'},
+  {id:'suno', name:'Suno AI', short:'Create full songs & background music from text.', category:'Social Media', pricing:'Freemium', rating:4.7, reviews:'175K', tags:['Music','Shorts','Background'], uses:['Content Creation','Design & Creativity'], web:'https://suno.com', grad:'from-orange-500 to-pink-600', price:'Free • $10/mo'},
+  {id:'fireflies', name:'Fireflies.ai', short:'AI meeting notes, transcripts & action items on autopilot.', category:'Business', pricing:'Freemium', rating:4.5, reviews:'130K', tags:['Meetings','Notes','CRM'], uses:['Business & Work'], web:'https://fireflies.ai', grad:'from-amber-400 to-orange-600', price:'Free • $10/mo'},
+  {id:'opus', name:'Opus Clip', short:'Turn long videos into viral shorts with virality scoring.', category:'Social Media', pricing:'Freemium', rating:4.6, reviews:'160K', tags:['Shorts','Repurpose','Captions'], uses:['Content Creation','Marketing & SEO'], web:'https://opus.pro', grad:'from-sky-400 to-blue-700', price:'Free • $15/mo'},
+  {id:'consensus', name:'Consensus AI', short:'Evidence-based answers drawn from 200M+ papers.', category:'Research', pricing:'Freemium', rating:4.6, reviews:'70K', tags:['Papers','Citations','Study'], uses:['Education & Learning','Business & Work'], web:'https://consensus.app', grad:'from-emerald-500 to-cyan-700', price:'Free • $9/mo'},
+  {id:'firefly', name:'Adobe Firefly', short:'Commercial-safe image gen built into Photoshop & Express.', category:'Design', pricing:'Free', rating:4.5, reviews:'200K', tags:['Image','Branding','Adobe'], uses:['Design & Creativity','Marketing & SEO'], web:'https://firefly.adobe.com', grad:'from-red-500 to-purple-700', price:'Free • $5/mo'},
+  {id:'khanmigo', name:'Khanmigo', short:'AI tutor & teaching assistant for students and teachers.', category:'Education', pricing:'Free', rating:4.6, reviews:'55K', tags:['Tutor','Classroom','Kids'], uses:['Education & Learning'], web:'https://khanacademy.org', grad:'from-green-400 to-emerald-700', price:'Free for educators'}
+];
+const SERVICES = [
+  {n:'YouTube Thumbnail', d:'High-CTR thumbnail + 2 variants, source files included.', p:'From $19', t:'48h delivery', g:'from-fuchsia-500 to-pink-600', i:'M4 5h16v14H4zM4 17l5-5 4 4 3-3 4 4'},
+  {n:'Short Video Script', d:'Hook, story & CTA script optimized for retention.', p:'From $29', t:'24h delivery', g:'from-violet-500 to-purple-700', i:'M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z'},
+  {n:'Logo & Brand Kit', d:'Logo, colors, fonts + social profile kit.', p:'From $49', t:'3–4 days', g:'from-cyan-500 to-blue-600', i:'M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2-.5-1.2.3-2.5 1.7-2.5H17a4 4 0 004-4c0-5-4-9.5-9-9.5z'},
+  {n:'Faceless Video Editing', d:'Captions, b-roll, sound & pacing for Shorts/Reels.', p:'From $99', t:'3–5 days', g:'from-rose-500 to-orange-500', i:'M4 5h16v14H4zM10 9l5 3-5 3z'},
+  {n:'AI Voiceover & Dubbing', d:'Natural voiceover or dubbing in 29 languages.', p:'From $25', t:'48h delivery', g:'from-emerald-500 to-teal-600', i:'M12 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3zM5 10a7 7 0 0014 0'},
+  {n:'SEO Blog Article', d:'2,000-word researched article ready to rank.', p:'From $35', t:'2–3 days', g:'from-amber-500 to-orange-600', i:'M3 11l18-8-8 18-2.5-7.5z'},
+  {n:'Social Content Kit', d:'30 captions + hashtags + 10 carousel ideas.', p:'From $59', t:'3 days', g:'from-pink-500 to-rose-600', i:'M8 12h8M12 8v8M21 12a9 9 0 11-18 0 9 9 0 0118 0z'},
+  {n:'Channel Audit & Strategy', d:'Full audit + 30-day content & tool roadmap.', p:'From $79', t:'5 days', g:'from-indigo-500 to-purple-600', i:'M13 2L4 14h6l-1 8 9-12h-6z'}
+];
+const POSTS = [
+  {id:'best-ai-2026', title:'10 Best AI Tools for Creators in 2026', ex:'We tested 40+ tools so you don’t have to — here are the 10 actually worth your time and money.', cat:'AI News', date:'Sep 28, 2026', read:'8 min read', g:'from-indigo-500 to-purple-700', feat:true},
+  {id:'youtube-scripts', title:'How to Write YouTube Scripts 10x Faster with AI', ex:'The exact ChatGPT + Claude workflow top creators use for hooks, retention and CTAs.', cat:'AI Tutorials', date:'Sep 20, 2026', read:'6 min read', g:'from-rose-500 to-orange-500', feat:false},
+  {id:'chat-vs-claude', title:'ChatGPT vs Claude vs Gemini: Which Writes Best?', ex:'Honest side-by-side on tone, length, coding help and factual accuracy.', cat:'Comparisons', date:'Sep 12, 2026', read:'10 min read', g:'from-cyan-500 to-blue-600', feat:false},
+  {id:'video-compared', title:'7 AI Video Tools Compared: Runway vs CapCut vs Descript', ex:'Pricing, quality and speed tested — plus which one is best for Shorts.', cat:'Comparisons', date:'Sep 02, 2026', read:'9 min read', g:'from-emerald-500 to-teal-600', feat:false},
+  {id:'perplexity-guide', title:'How Students Use Perplexity for Research (the Right Way)', ex:'Citations, follow-ups and fact-checking — study smarter without plagiarism traps.', cat:'AI Tutorials', date:'Aug 24, 2026', read:'5 min read', g:'from-violet-500 to-fuchsia-600', feat:false},
+  {id:'thumbnail-workflow', title:'From Idea to Thumbnail: My AI Creator Workflow', ex:'Midjourney + Canva + Leonardo in 25 minutes — full process with prompts.', cat:'Creator Guides', date:'Aug 15, 2026', read:'7 min read', g:'from-amber-500 to-pink-600', feat:false}
+];
+
+/* ============ STATE ============ */
+let state = {q:'', cat:'All', pricing:'All', rating:'All', use:'All', sort:'popular', visible:9};
+let compareList = ['chatgpt','midjourney'];
+let saved = new Set();
+let blogFilter = 'All';
+try{ const s = localStorage.getItem('tn_saved'); if(s) saved = new Set(JSON.parse(s)); }catch(e){}
+function persistSaved(){ try{ localStorage.setItem('tn_saved', JSON.stringify([...saved])); }catch(e){} }
+
+/* ============ HELPERS ============ */
+const $ = id => document.getElementById(id);
+const toolById = id => TOOLS.find(t=>t.id===id);
+const esc = s => String(s).replace(/</g,'&lt;');
+function stars(r){ const f=Math.round(r); return '★'.repeat(f)+'☆'.repeat(5-f); }
+function priceBadge(p){ const m={Free:'bg-emerald-500/15 text-emerald-300 border-emerald-400/30',Freemium:'bg-cyan-500/15 text-cyan-300 border-cyan-400/30',Paid:'bg-amber-500/15 text-amber-300 border-amber-400/30'}; return m[p]||m.Freemium; }
+function toast(msg){ const w=$('toastWrap'); const d=document.createElement('div'); d.className='toast rounded-2xl px-4 py-3 text-sm font-medium flex items-center gap-2'; d.innerHTML='<span class="w-2 h-2 rounded-full bg-cyan-300 shrink-0"></span><span>'+esc(msg)+'</span>'; w.appendChild(d); setTimeout(()=>{d.style.opacity='0';d.style.transition='.4s'; setTimeout(()=>d.remove(),400);},3200); }
+function catIcon(p){ return '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="'+p+'"/></svg>'; }
+function catCount(n){ return TOOLS.filter(t=>t.category===n).length; }
+
+/* detail enrichment */
+function enrich(t){
+  const feats = {
+    'AI Writing':['Long-form drafts & rewrites','Tone & style control','Plagiarism-safe originality modes','50+ templates & brand voice','Export to Docs, Notion & WordPress'],
+    'AI Image':['Text-to-image in 4K','Inpainting & outpainting','Style presets & LoRAs','Background remover','Commercial license options'],
+    'AI Video':['Auto-captions & silence removal','Text-to-video generation','Background & noise cleanup','Viral templates & transitions','4K export & direct publish'],
+    'AI Voice':['120+ lifelike voices','Voice cloning (30s sample)','29-language dubbing','Emotion & pacing control','Studio-quality WAV export'],
+    'AI Coding':['Inline autocomplete','Chat with your codebase','One-click refactor & tests','40+ language support','SOC-2 & SSO for teams'],
+    'Productivity':['Auto summaries & action items','Ask-your-docs Q&A','Templates & automations','Calendar & Slack integrations','Offline & mobile apps'],
+    'Marketing':['SEO briefs & scoring','Brand voice memory','Ad & email variants','Competitor gap analysis','Analytics integrations'],
+    'Business':['Meeting transcription','AI avatars & training videos','Website & funnel builder','CRM & helpdesk integrations','Team workspaces & roles'],
+    'Education':['Step-by-step tutoring','Quiz & flashcard maker','Citation-backed answers','Classroom dashboards','Safe mode for kids'],
+    'Design':['Magic resize & mockups','Background & object erase','Brand kit autopilot','100k+ templates','Print & social export'],
+    'Social Media':['Virality score & hooks','Auto-reframe 16:9 → 9:16','Caption & hashtag writer','Scheduler & analytics','Trend audio finder'],
+    'Research':['Cited answers only','Paper & web sources','Follow-up threads','PDF upload & chat','Export to Zotero/Notion']
+  };
+  const F = feats[t.category]||feats['Productivity'];
+  const alts = TOOLS.filter(x=>x.id!==t.id && (x.category===t.category || x.tags.some(g=>t.tags.includes(g)))).slice(0,3).map(x=>x.id);
+  return {
+    features:F,
+    bestFor:[t.uses[0]||'Creators', t.category+' workflows', t.pricing==='Free'?'Budget-friendly projects':'Teams & professionals'],
+    pros:['Easy to learn, fast results','Strong '+t.category.toLowerCase()+' quality','Good '+t.pricing.toLowerCase()+' value'],
+    cons:[t.pricing==='Paid'?'No free plan — paid only':'Free plan has usage limits','Advanced features need learning curve'],
+    alts,
+    faqs:[
+      {q:'Is '+t.name+' free?', a:t.name+' offers '+t.pricing.toLowerCase()+' access ('+t.price+'). Limits apply on free tiers — check the official site for current quotas. (Demo data — verify before purchase.)'},
+      {q:'Who is '+t.name+' best for?', a:'Best for '+(t.uses.join(', '))+' — especially anyone working in '+t.category+'. Beginners can start in minutes; pros get deeper controls.'},
+      {q:'Can I use '+t.name+' commercially?', a:'In most cases yes on paid plans, but licensing varies. Always confirm commercial terms on the official website. (Placeholder guidance.)'}
+    ]
+  };
+}
+
+/* ============ RENDER: CARDS ============ */
+function toolCard(t){
+  const isSaved = saved.has(t.id);
+  return '<article class="card p-5 flex flex-col" aria-label="'+esc(t.name)+'">'
+  +'<div class="flex items-start gap-3">'
+  +'<span class="tool-avatar bg-gradient-to-br '+t.grad+'">'+esc(t.name[0])+'</span>'
+  +'<div class="flex-1 min-w-0"><div class="flex items-center gap-2 flex-wrap"><h3 class="font-display font-bold text-[16px] leading-tight">'+esc(t.name)+'</h3>'
+  +(t.sponsored?'<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30">SPONSORED</span>':'')
+  +'</div><p class="text-xs text-slate-400 mt-0.5">'+esc(t.category)+' • '+esc(t.reviews)+' reviews</p></div>'
+  +'<button onclick="toggleSave(\''+t.id+'\')" aria-label="Save '+esc(t.name)+'" aria-pressed="'+isSaved+'" class="w-9 h-9 rounded-lg btn-ghost flex items-center justify-center shrink-0 '+(isSaved?'!border-amber-400/60 !text-amber-300':'')+'">'+(isSaved?'★':'☆')+'</button></div>'
+  +'<p class="text-sm text-slate-400 mt-3 leading-relaxed flex-1">'+esc(t.short)+'</p>'
+  +'<div class="flex items-center gap-2 mt-3 flex-wrap"><span class="text-[11px] font-bold px-2.5 py-1 rounded-full border '+priceBadge(t.pricing)+'">'+t.pricing.toUpperCase()+'</span><span class="stars">'+stars(t.rating)+'</span><span class="text-xs font-bold">'+t.rating+'</span></div>'
+  +'<div class="flex flex-wrap gap-1.5 mt-3">'+t.tags.slice(0,3).map(g=>'<span class="text-[11px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300">'+esc(g)+'</span>').join('')+'</div>'
+  +'<div class="grid grid-cols-2 gap-2 mt-4"><a href="#/tool/'+t.id+'" class="btn-primary text-center rounded-xl py-2.5 text-[13px] font-bold">View Details</a><button onclick="addToCompare(\''+t.id+'\')" class="btn-ghost rounded-xl py-2.5 text-[13px] font-semibold">+ Compare</button></div>'
+  +'</article>';
+}
+
+/* ============ HOME RENDER ============ */
+function renderHome(){
+  $('featuredGrid').innerHTML = TOOLS.filter(t=>t.feat).slice(0,8).map(toolCard).join('');
+  $('homeCategories').innerHTML = CATS.map(c=>'<button onclick="filterByCategory(\''+c.n+'\')" class="card p-4 sm:p-5 text-left group" aria-label="Filter by '+c.n+'"><span class="w-11 h-11 rounded-2xl bg-gradient-to-br '+c.g+' flex items-center justify-center mb-3 text-white">'+catIcon(c.icon)+'</span><span class="font-display font-bold text-[15px] block">'+c.n+'</span><span class="text-xs text-slate-500">'+catCount(c.n)+' tools</span><span class="text-xs font-bold text-cyan-300 mt-2 block opacity-0 group-hover:opacity-100 transition">Filter →</span></button>').join('');
+  $('compareTeaser').innerHTML = ['chatgpt','midjourney','elevenlabs'].map(id=>{const t=toolById(id);return '<div class="glass rounded-2xl p-3.5 flex items-center gap-3"><span class="tool-avatar !w-11 !h-11 !text-lg bg-gradient-to-br '+t.grad+'">'+t.name[0]+'</span><div class="flex-1"><p class="text-sm font-bold">'+t.name+'</p><p class="text-[11px] text-slate-400">'+t.price+'</p></div><span class="text-amber-300 text-sm font-bold">★ '+t.rating+'</span></div>';}).join('');
+  $('heroMiniTools').innerHTML = ['chatgpt','runway','elevenlabs'].map(id=>{const t=toolById(id);return '<a href="#/tool/'+id+'" class="flex items-center gap-3 rounded-2xl p-3 hover:bg-white/5 transition border border-transparent hover:border-white/10"><span class="tool-avatar !w-11 !h-11 !text-lg bg-gradient-to-br '+t.grad+'">'+t.name[0]+'</span><span class="flex-1"><span class="block text-sm font-bold">'+t.name+'</span><span class="block text-[11px] text-slate-400">'+t.category+'</span></span><span class="chip">'+t.pricing+'</span></a>';}).join('');
+  $('homeServices').innerHTML = SERVICES.slice(0,4).map(serviceCard).join('');
+  $('homeBlog').innerHTML = POSTS.slice(0,3).map(blogCard).join('');
+}
+function serviceCard(s){
+  return '<div class="card p-5 flex flex-col"><span class="w-11 h-11 rounded-2xl bg-gradient-to-br '+s.g+' flex items-center justify-center text-white mb-3">'+catIcon(s.i)+'</span><h3 class="font-display font-bold">'+s.n+'</h3><p class="text-[13px] text-slate-400 mt-1.5 flex-1 leading-relaxed">'+s.d+'</p><div class="flex items-center justify-between mt-4 text-xs"><span class="font-bold text-cyan-300">'+s.p+'</span><span class="text-slate-500">'+s.t+'</span></div><button onclick="orderService(\''+s.n+'\')" class="btn-ghost rounded-xl py-2.5 mt-3 text-[13px] font-bold">Order →</button></div>';
+}
+function blogCard(p){
+  return '<article class="card overflow-hidden flex flex-col"><div class="h-36 bg-gradient-to-br '+p.g+' relative flex items-end p-4"><span class="absolute inset-0 opacity-25" style="background-image:radial-gradient(white 1px,transparent 1px); background-size:14px 14px;"></span><span class="chip relative !bg-black/40 !text-white">'+p.cat+'</span></div><div class="p-5 flex flex-col flex-1"><h3 class="font-display font-bold leading-snug">'+p.title+'</h3><p class="text-[13px] text-slate-400 mt-2 flex-1 leading-relaxed">'+p.ex+'</p><p class="text-[11px] text-slate-500 mt-3">'+p.date+' • '+p.read+'</p><a href="#/article/'+p.id+'" class="mt-3 text-sm font-bold text-cyan-300 hover:text-cyan-200">Read More →</a></div></article>';
+}
+
+/* ============ TOOLS PAGE ============ */
+function initFilters(){
+  $('fCat').innerHTML = '<option value="All">All categories</option>'+CATS.map(c=>'<option>'+c.n+'</option>').join('');
+  ['toolsSearch','fCat','fPrice','fRate','fUse','fSort'].forEach(id=>{
+    $(id).addEventListener('input', e=>{ if(id==='toolsSearch') state.q=e.target.value; else if(id==='fCat') state.cat=e.target.value; else if(id==='fPrice') state.pricing=e.target.value; else if(id==='fRate') state.rating=e.target.value; else if(id==='fUse') state.use=e.target.value; else state.sort=e.target.value; state.visible=9; renderTools(); });
+    $(id).addEventListener('change', e=>{ if(id==='fCat') state.cat=e.target.value; else if(id==='fPrice') state.pricing=e.target.value; else if(id==='fRate') state.rating=e.target.value; else if(id==='fUse') state.use=e.target.value; else state.sort=e.target.value; state.visible=9; renderTools(); });
+  });
+}
+function filteredTools(){
+  let r = TOOLS.filter(t=>{
+    const q = state.q.trim().toLowerCase();
+    const mq = !q || (t.name+' '+t.short+' '+t.category+' '+t.tags.join(' ')+' '+t.uses.join(' ')).toLowerCase().includes(q);
+    const mc = state.cat==='All'||t.category===state.cat;
+    const mp = state.pricing==='All'||t.pricing===state.pricing;
+    const mr = state.rating==='All'||t.rating>=parseFloat(state.rating);
+    const mu = state.use==='All'||t.uses.includes(state.use);
+    return mq&&mc&&mp&&mr&&mu;
+  });
+  if(state.sort==='az') r.sort((a,b)=>a.name.localeCompare(b.name));
+  else if(state.sort==='free'){ const o={Free:0,Freemium:1,Paid:2}; r.sort((a,b)=>o[a.pricing]-o[b.pricing]||b.rating-a.rating); }
+  else r.sort((a,b)=>b.rating-a.rating);
+  return r;
+}
+function renderTools(){
+  const r = filteredTools();
+  const show = r.slice(0,state.visible);
+  $('toolsGrid').innerHTML = show.map(toolCard).join('');
+  $('toolsEmpty').classList.toggle('hidden', r.length>0);
+  $('toolsCount').innerHTML = 'Showing <strong class="text-white">'+show.length+'</strong> of <strong class="text-white">'+r.length+'</strong> tools';
+  $('pageInfo').textContent = r.length? 'Page 1 • '+Math.min(state.visible,r.length)+' of '+r.length+' results':'';
+  $('loadMoreBtn').style.display = state.visible>=r.length?'none':'inline-block';
+  const chips=[];
+  if(state.q) chips.push(['q','“'+state.q+'”']);
+  if(state.cat!=='All') chips.push(['cat',state.cat]);
+  if(state.pricing!=='All') chips.push(['pricing',state.pricing]);
+  if(state.rating!=='All') chips.push(['rating',state.rating+'+ ★']);
+  if(state.use!=='All') chips.push(['use',state.use]);
+  $('activeChips').innerHTML = chips.map(c=>'<button onclick="removeChip(\''+c[0]+'\')" class="chip !border-indigo-400/40 !text-indigo-200">'+esc(c[1])+' ✕</button>').join('');
+}
+function removeChip(k){ if(k==='q'){state.q='';$('toolsSearch').value='';} if(k==='cat'){state.cat='All';$('fCat').value='All';} if(k==='pricing'){state.pricing='All';$('fPrice').value='All';} if(k==='rating'){state.rating='All';$('fRate').value='All';} if(k==='use'){state.use='All';$('fUse').value='All';} state.visible=9; renderTools(); }
+function clearFilters(){ state={q:'',cat:'All',pricing:'All',rating:'All',use:'All',sort:'popular',visible:9}; $('toolsSearch').value='';$('fCat').value='All';$('fPrice').value='All';$('fRate').value='All';$('fUse').value='All';$('fSort').value='popular'; renderTools(); }
+function loadMore(){ state.visible+=6; renderTools(); }
+function filterByCategory(c){ state.cat=c; state.visible=9; try{$('fCat').value=c;}catch(e){} renderTools(); location.hash='#/tools'; }
+function toggleSave(id){ if(saved.has(id)){saved.delete(id); toast('Removed from saved');} else {saved.add(id); toast('Saved — find it in Compare later');} persistSaved(); refreshCards(); }
+function refreshCards(){ renderTools(); renderHome(); }
+
+/* ============ DETAIL ============ */
+function openTool(id){
+  const t = toolById(id); if(!t){ location.hash='#/tools'; return; }
+  const e = enrich(t);
+  document.title = t.name+' — Review, Pricing & Alternatives | ToolNova AI';
+  $('detailWrap').innerHTML =
+  '<a href="#/tools" class="text-sm font-semibold text-slate-400 hover:text-white">← Back to directory</a>'
+  +'<div class="card p-6 sm:p-8 mt-4 relative overflow-hidden"><div class="orb w-[280px] h-[280px] -top-20 -right-20" style="background:radial-gradient(circle,#6366F1,transparent 65%);opacity:.3;"></div>'
+  +'<div class="relative flex flex-col sm:flex-row gap-5"><span class="tool-avatar !w-[72px] !h-[72px] !text-3xl bg-gradient-to-br '+t.grad+'">'+t.name[0]+'</span>'
+  +'<div class="flex-1"><div class="flex flex-wrap items-center gap-2"><h1 class="font-display font-bold text-3xl">'+t.name+'</h1>'+(t.sponsored?'<span class="text-[10px] font-bold px-2 py-1 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30">SPONSORED</span>':'<span class="text-[10px] font-bold px-2 py-1 rounded-full bg-emerald-400/15 text-emerald-300 border border-emerald-400/30">VERIFIED DEMO</span>')+'</div>'
+  +'<p class="text-slate-300 mt-2">'+t.short+'</p>'
+  +'<div class="flex flex-wrap items-center gap-2 mt-3"><span class="text-[11px] font-bold px-2.5 py-1 rounded-full border '+priceBadge(t.pricing)+'">'+t.pricing.toUpperCase()+'</span><span class="chip">'+t.category+'</span><span class="stars">'+stars(t.rating)+'</span><span class="text-sm font-bold">'+t.rating+'</span><span class="text-xs text-slate-500">('+t.reviews+' reviews • placeholder)</span></div>'
+  +'<div class="flex flex-wrap gap-1.5 mt-3">'+t.tags.map(g=>'<span class="text-[11px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300">'+g+'</span>').join('')+'</div>'
+  +'<div class="flex flex-col sm:flex-row gap-2.5 mt-5"><a href="'+t.web+'" target="_blank" rel="sponsored noopener" class="btn-primary rounded-xl px-6 py-3.5 font-bold text-sm text-center">Visit Official Website ↗</a><button onclick="addToCompare(\''+t.id+'\')" class="btn-ghost rounded-xl px-6 py-3.5 font-semibold text-sm">+ Add to Compare</button><button onclick="toggleSave(\''+t.id+'\')" class="btn-ghost rounded-xl px-6 py-3.5 font-semibold text-sm">'+(saved.has(t.id)?'★ Saved':'☆ Save')+'</button></div>'
+  +'<p class="text-[11px] text-slate-500 mt-3">Pricing: '+t.price+' • Demo information — verify on official site before purchase.</p></div></div></div>'
+  +'<div class="grid lg:grid-cols-3 gap-4 mt-4"><div class="lg:col-span-2 grid gap-4 content-start">'
+  +'<div class="card p-6"><h2 class="font-display font-bold text-xl mb-3">Overview</h2><p class="text-sm text-slate-400 leading-relaxed">'+t.short+' '+t.name+' is a '+t.category.toLowerCase()+' tool used for '+t.uses.join(', ').toLowerCase()+'. It stands out for ease of use, fast output and '+t.pricing.toLowerCase()+' access ('+t.price+'). <span class="text-slate-500">Demo description — placeholder until editorial verification.</span></p>'
+  +'<div class="grid sm:grid-cols-2 gap-2.5 mt-4">'+e.features.map((f,i)=>'<div class="flex gap-2.5 items-start rounded-xl p-3 bg-white/[.03] border border-white/10 text-sm"><span class="w-6 h-6 rounded-lg grad-bg flex items-center justify-center text-xs font-bold shrink-0">'+(i+1)+'</span>'+f+'</div>').join('')+'</div></div>'
+  +'<div class="card p-6"><h2 class="font-display font-bold text-xl mb-3">Best for</h2><div class="flex flex-wrap gap-2">'+e.bestFor.map(b=>'<span class="chip !text-cyan-200 !border-cyan-400/30">✓ '+b+'</span>').join('')+'</div></div>'
+  +'<div class="grid sm:grid-cols-2 gap-4"><div class="card p-6"><h2 class="font-display font-bold text-lg mb-3 text-emerald-300">Pros</h2><ul class="text-sm text-slate-300 grid gap-2">'+e.pros.map(p=>'<li>✓ '+p+'</li>').join('')+'</ul></div><div class="card p-6"><h2 class="font-display font-bold text-lg mb-3 text-rose-300">Cons</h2><ul class="text-sm text-slate-300 grid gap-2">'+e.cons.map(p=>'<li>• '+p+'</li>').join('')+'</ul></div></div>'
+  +'<div class="card p-6"><h2 class="font-display font-bold text-xl mb-2">Alternatives</h2><p class="text-xs text-slate-500 mb-4">Similar '+t.category+' tools worth comparing:</p><div class="grid sm:grid-cols-3 gap-3">'+e.alts.map(a=>{const x=toolById(a); if(!x) return ''; return '<a href="#/tool/'+x.id+'" class="rounded-2xl p-4 bg-white/[.03] border border-white/10 hover:border-indigo-400/50 transition block"><span class="tool-avatar !w-10 !h-10 !text-base bg-gradient-to-br '+x.grad+'">'+x.name[0]+'</span><span class="block font-bold text-sm mt-2">'+x.name+'</span><span class="block text-[11px] text-slate-500">★ '+x.rating+' • '+x.pricing+'</span></a>';}).join('')+'</div></div>'
+  +'<div class="card p-6"><h2 class="font-display font-bold text-xl mb-3">FAQ</h2><div class="grid gap-2">'+e.faqs.map((f,i)=>'<div class="faq-item rounded-xl border border-white/10 bg-white/[.02]"><button class="faq-btn" onclick="this.parentElement.classList.toggle(\'open\')" aria-expanded="false">'+f.q+'<span class="faq-arrow text-cyan-300">▾</span></button><div class="faq-body"><p class="px-[18px] pb-4 text-sm text-slate-400 leading-relaxed">'+f.a+'</p></div></div>').join('')+'</div></div>'
+  +'</div><aside class="grid gap-4 content-start"><div class="card p-6 text-center"><p class="text-xs font-bold tracking-widest text-slate-500">STARTING AT</p><p class="font-display font-bold text-2xl mt-1">'+t.price+'</p><a href="'+t.web+'" target="_blank" rel="sponsored noopener" class="btn-primary rounded-xl w-full py-3.5 mt-4 block font-bold text-sm">Visit Official Website ↗</a><button onclick="addToCompare(\''+t.id+'\')" class="btn-ghost rounded-xl w-full py-3 mt-2 text-sm font-semibold">Compare with similar</button></div>'
+  +'<div class="card p-6"><h3 class="font-display font-bold text-sm tracking-wide">AT A GLANCE</h3><dl class="mt-3 grid gap-2.5 text-sm"><div class="flex justify-between"><dt class="text-slate-500">Category</dt><dd class="font-semibold">'+t.category+'</dd></div><div class="flex justify-between"><dt class="text-slate-500">Pricing</dt><dd class="font-semibold">'+t.pricing+'</dd></div><div class="flex justify-between"><dt class="text-slate-500">Rating</dt><dd class="font-semibold">★ '+t.rating+'</dd></div><div class="flex justify-between"><dt class="text-slate-500">Best use</dt><dd class="font-semibold text-right">'+t.uses[0]+'</dd></div></dl></div>'
+  +'<div class="rounded-2xl p-5 text-[12px] text-amber-200/90 leading-relaxed" style="background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.25);">Affiliate Disclosure: ToolNova AI may earn a commission if you visit partner sites. Listings show demo data until verified — always confirm pricing officially.</div>'
+  +'</aside></div>'
+  +'<div class="mt-8"><h2 class="font-display font-bold text-2xl mb-4">Related tools</h2><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">'+TOOLS.filter(x=>x.id!==t.id&&x.category===t.category).concat(TOOLS.filter(x=>x.id!==t.id&&x.category!==t.category)).slice(0,3).map(toolCard).join('')+'</div></div>';
+}
+
+/* ============ CATEGORIES PAGE ============ */
+function renderCategoriesPage(){
+  $('allCategories').innerHTML = CATS.map(c=>'<button onclick="filterByCategory(\''+c.n+'\')" class="card p-6 text-left group"><span class="w-12 h-12 rounded-2xl bg-gradient-to-br '+c.g+' flex items-center justify-center text-white mb-4">'+catIcon(c.icon)+'</span><span class="font-display font-bold text-lg block">'+c.n+'</span><span class="text-sm text-slate-400 block mt-1">'+c.d+'</span><span class="flex items-center justify-between mt-4"><span class="chip">'+catCount(c.n)+' tools</span><span class="text-sm font-bold text-cyan-300 group-hover:translate-x-1 transition">Explore →</span></span></button>').join('');
+}
+
+/* ============ COMPARE ============ */
+function renderCompareSelectors(){
+  const opts = sel => '<option value="">— Choose a tool —</option>'+TOOLS.map(t=>'<option value="'+t.id+'"'+(sel===t.id?' selected':'')+'>'+t.name+' ('+t.pricing+')</option>').join('');
+  $('compareSelectors').innerHTML = [0,1,2].map(i=>'<div><label class="lbl" for="cmp'+i+'">Tool '+(i+1)+(i===2?' (optional)':'')+'</label><select id="cmp'+i+'" class="input text-sm" onchange="syncCompare()">'+opts(compareList[i]||'')+'</select></div>').join('');
+}
+function syncCompare(){ compareList = [0,1,2].map(i=>$('cmp'+i).value).filter(Boolean); }
+function addToCompare(id){
+  if(compareList.includes(id)){ toast(toolById(id).name+' is already in compare'); location.hash='#/compare'; renderCompareSelectors(); runCompare(); return; }
+  if(compareList.length>=3){ compareList.shift(); }
+  compareList.push(id); toast(toolById(id).name+' added to compare'); persistCompare();
+  if((location.hash||'').startsWith('#/compare')){ renderCompareSelectors(); runCompare(); } else location.hash='#/compare';
+}
+function persistCompare(){}
+function clearCompare(){ compareList=[]; renderCompareSelectors(); $('compareResult').innerHTML='<div class="card p-8 text-center text-slate-400 text-sm">Select at least 2 tools and press Compare Now.</div>'; }
+function presetCompare(ids){ compareList=ids; renderCompareSelectors(); runCompare(); window.scrollTo({top:0,behavior:'smooth'}); }
+function runCompare(){
+  syncCompare();
+  if(compareList.length<2){ $('compareResult').innerHTML='<div class="card p-8 text-center"><p class="font-bold">Please select at least 2 tools.</p><p class="text-sm text-slate-500 mt-1">Use the dropdowns above.</p></div>'; return; }
+  const list = compareList.map(toolById).filter(Boolean);
+  const row = (label, fn) => '<tr><td class="!text-slate-400 font-bold text-[13px] uppercase tracking-wide whitespace-nowrap">'+label+'</td>'+list.map(t=>'<td>'+fn(t)+'</td>').join('')+'</tr>';
+  $('compareResult').innerHTML =
+  '<div class="card overflow-hidden"><div class="overflow-x-auto"><table class="compare-table" aria-label="Tool comparison"><thead><tr><th class="w-[160px]">Feature</th>'+list.map(t=>'<th><div class="flex items-center gap-3"><span class="tool-avatar !w-11 !h-11 !text-lg bg-gradient-to-br '+t.grad+'">'+t.name[0]+'</span><span><span class="block">'+t.name+'</span><span class="block text-xs font-normal text-slate-300">★ '+t.rating+' • '+t.pricing+'</span></span></div></th>').join('')+'</tr></thead><tbody>'
+  + row('Category', t=>'<span class="chip">'+t.category+'</span>')
+  + row('Pricing', t=>'<span class="text-[11px] font-bold px-2.5 py-1 rounded-full border '+priceBadge(t.pricing)+'">'+t.pricing.toUpperCase()+'</span><span class="block text-xs text-slate-400 mt-1.5">'+t.price+'</span>')
+  + row('Main use', t=>t.uses[0]+'<span class="block text-xs text-slate-500 mt-1">'+t.uses.slice(1).join(', ')+'</span>')
+  + row('Key features', t=>'<ul class="grid gap-1 text-[13px] text-slate-300">'+enrich(t).features.slice(0,4).map(f=>'<li>✓ '+f+'</li>').join('')+'</ul>')
+  + row('Best for', t=>enrich(t).bestFor.join('<br>'))
+  + row('Website', t=>'<div class="grid gap-2"><a href="'+t.web+'" target="_blank" rel="sponsored noopener" class="btn-primary text-center rounded-xl py-2 text-xs font-bold">Visit Site ↗</a><a href="#/tool/'+t.id+'" class="btn-ghost text-center rounded-xl py-2 text-xs font-semibold">Details</a></div>')
+  +'</tbody></table></div></div>'
+  +'<div class="grid sm:grid-cols-3 gap-3 mt-4 lg:hidden">'+list.map(t=>'<div class="card p-4"><p class="font-bold text-sm">'+t.name+'</p><p class="text-xs text-slate-400 mt-1">'+t.short+'</p></div>').join('')+'</div>'
+  +'<p class="text-[11px] text-slate-500 mt-3">Demo comparison data — verify features & pricing on official websites before purchase.</p>';
+  toast('Comparison ready');
+}
+
+/* ============ SERVICES / SUBMIT / BLOG ============ */
+function renderServices(){
+  $('servicesGrid').innerHTML = SERVICES.map(serviceCard).join('');
+  $('svService').innerHTML = SERVICES.map(s=>'<option>'+s.n+'</option>').join('');
+  const sc=$('stCat'); if(sc) sc.innerHTML = CATS.map(c=>'<option>'+c.n+'</option>').join('');
+}
+function orderService(n){ location.hash='#/services'; setTimeout(()=>{ $('svService').value=n; $('svName').focus({preventScroll:true}); document.getElementById('serviceForm').scrollIntoView({behavior:'smooth',block:'center'}); toast(n+' selected — complete the form'); },150); }
+function serviceSubmit(e){ e.preventDefault(); $('serviceForm').classList.add('hidden'); $('serviceSuccess').classList.remove('hidden'); toast('Service request sent'); return false; }
+function resetServiceForm(){ $('serviceForm').reset(); $('serviceForm').classList.remove('hidden'); $('serviceSuccess').classList.add('hidden'); }
+function submitTool(e){ e.preventDefault(); $('submitForm').classList.add('hidden'); $('submitSuccess').classList.remove('hidden'); toast('Tool submitted for review'); return false; }
+function resetSubmit(){ $('submitForm').reset(); $('submitForm').classList.remove('hidden'); $('submitSuccess').classList.add('hidden'); }
+function contactSubmit(e){ e.preventDefault(); e.target.classList.add('hidden'); $('contactSuccess').classList.remove('hidden'); toast('Message sent'); return false; }
+function newsletterSubmit(e,form){ e.preventDefault(); form.reset(); toast('Subscribed — welcome to ToolNova AI'); return false; }
+
+function renderBlog(){
+  const cats=['All','AI News','AI Tutorials','Comparisons','Creator Guides'];
+  $('blogChips').innerHTML = cats.map(c=>'<button onclick="setBlogFilter(\''+c+'\')" class="chip '+(blogFilter===c?'!bg-indigo-500/25 !border-indigo-400/50 !text-white':'')+'">'+c+'</button>').join('');
+  const list = POSTS.filter(p=>blogFilter==='All'||p.cat===blogFilter);
+  const f = list.find(p=>p.feat)||list[0];
+  $('blogFeatured').innerHTML = f? '<a href="#/article/'+f.id+'" class="card overflow-hidden grid md:grid-cols-2 group block"><div class="h-56 md:h-auto bg-gradient-to-br '+f.g+' relative flex items-end p-6"><span class="absolute inset-0 opacity-25" style="background-image:radial-gradient(white 1px,transparent 1px); background-size:16px 16px;"></span><span class="chip relative !bg-black/50 !text-white">★ FEATURED • '+f.cat+'</span></div><div class="p-7"><h2 class="font-display font-bold text-2xl leading-tight group-hover:text-cyan-200 transition">'+f.title+'</h2><p class="text-sm text-slate-400 mt-3 leading-relaxed">'+f.ex+'</p><p class="text-xs text-slate-500 mt-4">'+f.date+' • '+f.read+'</p><span class="inline-block mt-4 btn-primary rounded-xl px-5 py-2.5 text-sm font-bold">Read Article →</span></div></a>':'';
+  $('blogGrid').innerHTML = list.filter(p=>p!==f).map(blogCard).join('') || '<p class="text-slate-500 col-span-full">No articles in this category yet.</p>';
+}
+function setBlogFilter(c){ blogFilter=c; renderBlog(); }
+function openArticle(id){
+  const p = POSTS.find(x=>x.id===id); if(!p){location.hash='#/blog';return;}
+  document.title = p.title+' | ToolNova AI Blog';
+  const related = POSTS.filter(x=>x.id!==id).slice(0,2);
+  $('articleWrap').innerHTML = '<a href="#/blog" class="text-sm font-semibold text-slate-400 hover:text-white">← Back to blog</a>'
+  +'<div class="h-52 sm:h-64 rounded-3xl mt-4 bg-gradient-to-br '+p.g+' relative flex items-end p-6 overflow-hidden"><span class="absolute inset-0 opacity-25" style="background-image:radial-gradient(white 1px,transparent 1px); background-size:16px 16px;"></span><span class="chip relative !bg-black/50 !text-white">'+p.cat+'</span></div>'
+  +'<h1 class="font-display font-bold text-3xl sm:text-4xl mt-6 leading-tight">'+p.title+'</h1><p class="text-sm text-slate-500 mt-2">'+p.date+' • '+p.read+' • By ToolNova Editorial (demo)</p>'
+  +'<div class="prose-dark mt-6"><p>'+p.ex+' This demo article shows how ToolNova AI guides will look — practical, honest and creator-first. Replace this paragraph with your CMS content after connecting a backend.</p><h3>Key takeaways</h3><ul><li>What the tool does best — and where it falls short.</li><li>Exact prompts and settings we tested.</li><li>Pricing breakdown: free vs paid, and who should upgrade.</li><li>Best alternatives if it is not the right fit.</li></ul><h3>Our testing process</h3><p>Every ToolNova AI review follows the same checklist: real project test, free-plan limits check, export quality review and support response time. Ratings shown are placeholder demo scores until full editorial verification.</p><h3>Bottom line</h3><p>Start with the free plan, test it on one real project this week, then compare it side-by-side on our Compare page before committing. That is the fastest way to build a stack you will actually keep.</p></div>'
+  +'<div class="flex flex-wrap gap-2 mt-6"><a href="#/tools" class="btn-primary rounded-xl px-5 py-2.5 text-sm font-bold">Find tools mentioned →</a><a href="#/compare" class="btn-ghost rounded-xl px-5 py-2.5 text-sm font-semibold">Compare alternatives</a></div>'
+  +'<h2 class="font-display font-bold text-xl mt-10 mb-4">Keep reading</h2><div class="grid sm:grid-cols-2 gap-4">'+related.map(blogCard).join('')+'</div>';
+}
+
+/* ============ SEARCH ============ */
+function openSearch(){ $('searchOverlay').classList.remove('hidden'); setTimeout(()=>$('globalSearchInput').focus(),50); renderGlobalResults(''); }
+function closeSearch(){ $('searchOverlay').classList.add('hidden'); }
+function quickSearch(q){ $('globalSearchInput').value=q; renderGlobalResults(q); }
+function heroQuick(q){ $('heroSearchInput').value=q; state.q=q; $('toolsSearch').value=q; state.visible=9; renderTools(); location.hash='#/tools'; }
+function renderGlobalResults(q){
+  q=(q||'').toLowerCase().trim();
+  const r = q? TOOLS.filter(t=>(t.name+' '+t.short+' '+t.category+' '+t.tags.join(' ')).toLowerCase().includes(q)).slice(0,6) : TOOLS.filter(t=>t.feat).slice(0,4);
+  $('globalSearchResults').innerHTML = '<p class="text-[11px] font-bold tracking-widest text-slate-500 px-1">'+(q? r.length+' RESULT'+(r.length!==1?'S':'') : 'POPULAR RIGHT NOW')+'</p>'
+  + (r.map(t=>'<a href="#/tool/'+t.id+'" onclick="closeSearch()" class="flex items-center gap-3 rounded-2xl p-3 bg-white/[.03] border border-white/10 hover:border-indigo-400/50 transition"><span class="tool-avatar !w-10 !h-10 !text-base bg-gradient-to-br '+t.grad+'">'+t.name[0]+'</span><span class="flex-1 min-w-0"><span class="block text-sm font-bold truncate">'+t.name+'</span><span class="block text-[11px] text-slate-500 truncate">'+t.category+' • ★ '+t.rating+'</span></span><span class="text-cyan-300 text-sm font-bold">→</span></a>').join('') || '<p class="text-sm text-slate-500 p-3">No matches — try “video”, “voice” or “design”. Press Enter to search the full directory.</p>');
+}
+
+/* ============ MODALS / CHAT ============ */
+function openGetStarted(){ const m=$('getStartedModal'); m.classList.remove('hidden'); m.classList.add('flex'); $('gsForm').classList.remove('hidden'); $('gsSuccess').classList.add('hidden'); setTimeout(()=>$('gsName').focus(),80); }
+function closeGetStarted(){ const m=$('getStartedModal'); m.classList.add('hidden'); m.classList.remove('flex'); }
+function getStartedSubmit(e){ e.preventDefault(); $('gsForm').classList.add('hidden'); $('gsSuccess').classList.remove('hidden'); toast('Welcome to ToolNova AI'); return false; }
+let chatOpened=false;
+function toggleConcierge(){ const p=$('conciergePanel'); const open=p.classList.contains('hidden'); p.classList.toggle('hidden'); if(open&&!chatOpened){ chatOpened=true; botSay('Hi! I’m Nova ✦ Tell me what you want to create — e.g. “video scripts”, “thumbnails”, “study help” — and I’ll recommend the best tools.'); } if(open) setTimeout(()=>$('chatInput').focus(),100); }
+function botSay(html){ const l=$('chatLog'); const d=document.createElement('div'); d.className='chat-msg-bot rounded-2xl rounded-tl-md p-3 leading-relaxed'; d.innerHTML=html; l.appendChild(d); l.scrollTop=l.scrollHeight; }
+function userSay(t){ const l=$('chatLog'); const d=document.createElement('div'); d.className='chat-msg-user rounded-2xl rounded-tr-md p-3 ml-8'; d.textContent=t; l.appendChild(d); l.scrollTop=l.scrollHeight; }
+function sendChat(){ const i=$('chatInput'); const v=i.value.trim(); if(!v) return; userSay(v); i.value=''; setTimeout(()=>botSay(botReply(v)),500); }
+function botReply(q){
+  q=q.toLowerCase();
+  const rec = ids => 'Top picks for you:<br><br>'+ids.map(id=>{const t=toolById(id);return '• <a href="#/tool/'+id+'" class="text-cyan-200 font-bold underline">'+t.name+'</a> — '+t.short;}).join('<br>')+'<br><br><a href="#/compare" class="text-amber-200 font-bold underline">Compare them side-by-side →</a>';
+  if(/video|short|reel|tiktok|youtube.*edit|clip/.test(q)) return rec(['runway','capcut','opus']);
+  if(/script|hook|writing|blog|essay|copy|email/.test(q)) return rec(['chatgpt','claude','jasper']);
+  if(/voice|audio|song|music|podcast|dub/.test(q)) return rec(['elevenlabs','murf','suno']);
+  if(/image|thumb|logo|design|art|photo/.test(q)) return rec(['midjourney','leonardo','canva']);
+  if(/code|coding|program|app|website.*build|developer/.test(q)) return rec(['cursor','copilot','gamma']);
+  if(/study|research|homework|student|paper|citation/.test(q)) return rec(['perplexity','consensus','grammarly']);
+  if(/seo|market|ads|business|meeting/.test(q)) return rec(['surfer','copyai','fireflies']);
+  if(/productiv|note|slide|deck|doc/.test(q)) return rec(['notion-ai','gamma','fireflies']);
+  if(/price|free|cheap|cost/.test(q)) return 'Best <strong>free-friendly</strong> picks: <strong>CapCut</strong> (video), <strong>Leonardo</strong> (image), <strong>Khanmigo</strong> (tutoring). Filter the <a href="#/tools" class="text-cyan-200 font-bold underline">directory by Free →</a>';
+  if(/hi|hello|hey/.test(q)) return 'Hello! Ask me anything like “best AI for thumbnails?” or “compare video tools”.';
+  return 'Based on “'+esc(q)+'”, I’d start with <a href="#/tool/chatgpt" class="text-cyan-200 font-bold underline">ChatGPT</a>, <a href="#/tool/perplexity" class="text-cyan-200 font-bold underline">Perplexity</a> and <a href="#/tool/canva" class="text-cyan-200 font-bold underline">Canva</a>. Or <a href="#/tools" class="text-cyan-200 font-bold underline">browse the full directory →</a>';
+}
+
+/* ============ ROUTER ============ */
+const PAGES={home:'page-home',tools:'page-tools',categories:'page-categories',compare:'page-compare',services:'page-services',blog:'page-blog',about:'page-about',contact:'page-contact',submit:'page-submit',detail:'page-detail',article:'page-article'};
+const TITLES={home:'ToolNova AI — Discover the Right AI Tool for Every Task',tools:'AI Tools Directory — Search & Filter | ToolNova AI',categories:'Browse AI Categories | ToolNova AI',compare:'Compare AI Tools Side-by-Side | ToolNova AI',services:'Creator Services — Thumbnails, Scripts & More | ToolNova AI',blog:'AI & Creator Resources Blog | ToolNova AI',about:'About ToolNova AI — Our Mission',contact:'Contact ToolNova AI',submit:'Submit Your AI Tool | ToolNova AI'};
+function show(name){ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active')); $(PAGES[name]).classList.add('active'); if(TITLES[name]) document.title=TITLES[name]; document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===name)); window.scrollTo({top:0}); closeMobile(); observeReveals(); }
+function router(){
+  const h=location.hash||'#/home';
+  if(h.startsWith('#/tool/')){ const id=h.split('/')[2]; openTool(id); show('detail'); return; }
+  if(h.startsWith('#/article/')){ const id=h.split('/')[2]; openArticle(id); show('article'); return; }
+  const map={'#/home':'home','#/':'home','':'home','#/tools':'tools','#/categories':'categories','#/compare':'compare','#/services':'services','#/blog':'blog','#/about':'about','#/contact':'contact','#/submit':'submit'};
+  show(map[h]||'home');
+  if(h==='#/compare'){ renderCompareSelectors(); runCompare(); }
+}
+window.addEventListener('hashchange',router);
+
+/* ============ MENU / MISC ============ */
+function closeMobile(){ $('mobileMenu').classList.add('hidden'); $('menuIconOpen').classList.remove('hidden'); $('menuIconClose').classList.add('hidden'); $('menuBtn').setAttribute('aria-expanded','false'); }
+$('menuBtn').addEventListener('click',()=>{ const m=$('mobileMenu'); const open=m.classList.contains('hidden'); m.classList.toggle('hidden'); $('menuIconOpen').classList.toggle('hidden',open); $('menuIconClose').classList.toggle('hidden',!open); $('menuBtn').setAttribute('aria-expanded',open); });
+$('searchOpenBtn').addEventListener('click',openSearch);
+$('globalSearchInput').addEventListener('input',e=>renderGlobalResults(e.target.value));
+$('globalSearchInput').addEventListener('keydown',e=>{ if(e.key==='Enter'){ state.q=e.target.value; $('toolsSearch').value=state.q; state.visible=9; renderTools(); closeSearch(); location.hash='#/tools'; }});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeSearch(); closeGetStarted(); $('conciergePanel').classList.add('hidden'); }});
+$('heroSearchForm').addEventListener('submit',e=>{ e.preventDefault(); const v=$('heroSearchInput').value; state.q=v; $('toolsSearch').value=v; state.visible=9; renderTools(); location.hash='#/tools'; });
+$('chatInput').addEventListener('keydown',e=>{ if(e.key==='Enter') sendChat(); });
+
+/* reveal + counters */
+let obs;
+function observeReveals(){
+  const els=document.querySelectorAll('.reveal:not(.visible)');
+  if(!('IntersectionObserver' in window)){ els.forEach(el=>el.classList.add('visible')); return; }
+  obs=obs||new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('visible'); obs.unobserve(en.target);} }),{threshold:.12});
+  els.forEach(el=>obs.observe(el));
+  document.querySelectorAll('.counter').forEach(c=>{
+    if(c.dataset.done) return; c.dataset.done='1';
+    const target=+c.dataset.target; let cur=0; const step=Math.max(1,Math.round(target/60));
+    const t=setInterval(()=>{ cur+=step; if(cur>=target){cur=target;clearInterval(t);} c.textContent=cur; },30);
+  });
+}
+/* rotating hero word */
+const words=['Every Task','Videos','Thumbnails','Scripts','Voiceovers','Design','Code','Research']; let wi=0;
+setInterval(()=>{ wi=(wi+1)%words.length; const r=$('rotator'); if(r){ r.style.opacity='0'; setTimeout(()=>{ r.textContent=words[wi]; r.style.opacity='1'; },200); } },2600);
+
+/* ============ INIT ============ */
+renderHome(); initFilters(); renderTools(); renderCategoriesPage(); renderCompareSelectors(); renderServices(); renderBlog();
+observeReveals();
+if(!location.hash) location.hash='#/home';
+router();
+</script>
+</body>
+</html>
